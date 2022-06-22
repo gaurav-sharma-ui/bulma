@@ -1,3 +1,28 @@
+@font-face {
+  font-family: HeroNew-Regular;
+  src: url(assets/fonts/HeroNewRegular.woff);
+}
+
+@font-face {
+  font-family: HeroNew-Bold;
+  src: url(assets/fonts/HeroNewBold.woff);
+}
+
+@font-face {
+  font-family: HeroNew-ExtraBold;
+  src: url(assets/fonts/HeroNewExtraBold.woff);
+}
+
+@font-face {
+  font-family: Helvetica-regular;
+  src: url(assets/fonts/Helvetica.ttf);
+}
+
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(assets/fonts/Helvetica-Bold.ttf);
+}
+
 :root {
 
     /*GLOBAL SETTING*/
@@ -5,6 +30,13 @@
 
     /*CONTAINER WIDTH*/
     --container: 122.5rem;
+
+    /* FONT FAMILY */
+    --hero-regular: HeroNew-Regular;
+    --hero-bold:HeroNew-Bold;
+    --hero-extra-bold: HeroNew-ExtraBold; 
+    --helvetica-regular: Helvetica-regular;
+    --helvetica-bold: Helvetica-Bold;
 
     /* Font Size */
     --font-size-52: 5.2rem;
@@ -24,7 +56,7 @@
     --line-height-62: 6.2rem;
     --line-height-52: 5.2rem;
     --line-height-34: 3.4rem;
-    --line-height28: 2.8rem;
+    --line-height-28: 2.8rem;
     --line-height-24: 2.4rem;
     --line-height-22: 2.2rem;
     --line-height-20: 2rem;
@@ -46,12 +78,129 @@
     --light-grey-color2: #91A2C6;
     --green-color: #60EDCE;
     --light-purple-color: #EAEAFF;
+
+    /* PADDING_MARGIN VARIABLES */
+    --padding-0: 0;
+    --padding-125: 12.5rem;
+    --mb-22: 2.2rem; 
+    --mb-27: 2.7rem; 
+    --p-x-70: 7rem;
+    --p-x-110: 11rem;
+    --border-width: .2rem;
 }
 
 html {
     font-size: var(--global-font-size);
 }
 
+body{
+    font-family: var(--hero-regular);
+    color: var(--black-color);
+}
+
 .container:not(.is-max-desktop):not(.is-max-widescreen) {
     max-width: var(--container);
+}
+
+/* FONTS CSS*/
+
+.hero-extrabold{
+    font-family: var(--hero-extra-bold);
+}
+
+.font-52{
+    font-size: var(--font-size-52);
+}
+.font-24{
+    font-size: var(--font-size-24);
+}
+
+.font-12{
+    font-size: var(--font-size-12);
+}
+.line-height-62{
+    line-height: var(--line-height-62);
+}
+.line-height-34{
+    line-height: var(--line-height-34);
+}
+.line-height-18{
+    line-height: var(--line-height-18);
+}
+
+/* FONTS COLOR */
+.black{
+    color: var(--black-color);
+}
+
+.blue-dark{
+    color: var(--primary-color);
+}
+
+/* HELPERS CLASSES */
+.span-blue{
+    color: var(--blue-color)
+}
+
+.mb-5{
+    margin-bottom: var(--mb-22);
+}
+
+.mb-22{
+    margin-bottom: var(--mb-22);
+}
+
+.mb-27{
+    margin-bottom: var(--mb-27);
+}
+
+.p-x-70{
+    padding: 0 var(--p-x-70);
+}
+
+.p-x-110{
+    padding: 0 var(--p-x-110);
+}
+
+/* BUTTON STYLES */
+.button.is-rounded {
+    border-color: var(--primary-color);
+    border-width: var(--border-width);
+    color: var(--primary-color);
+    padding: .8rem 3.9rem;
+    height: auto;
+}
+.is-bold{
+    font-family: var(--hero-bold);
+}
+
+.button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea{
+    font-size: 1.4rem;
+}
+.a-underline{
+    text-decoration: underline;
+}
+/* MAIN_SLIDER SECTION */
+
+.section-y-125-0{
+    padding-top: var(--padding-125);
+    padding-bottom: var(--padding-0);
+}
+
+.pos-relative{
+    position: relative;
+}
+
+.pos-absolute{
+    position: absolute;
+}
+
+.mobile-header{
+    right: -3.5rem;
+    bottom: -22rem;
+}
+ 
+.how-it-works{
+    bottom: 30px;
+    left: 29%;
 }
