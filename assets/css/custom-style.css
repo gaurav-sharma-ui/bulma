@@ -1,9 +1,0 @@
-@import "variables.css";
-
-html {
-    font-size: var(--global-font-size);
-}
-
-.container:not(.is-max-desktop):not(.is-max-widescreen) {
-    max-width: var(--container);
-}
