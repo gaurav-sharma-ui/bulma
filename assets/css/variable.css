@@ -5,7 +5,13 @@
     --global-font-size: 62.5%;
 
     /*CONTAINER WIDTH*/
+    --header-container: 106.6rem;
     --container: 122.5rem;
+
+    /* FONT WEIGHT */
+    --font-weight-normal: normal;
+    --font-weight-400: 400;
+    --font-weight-900: 900;
 
     /* FONT FAMILY */
     --hero-regular: HeroNew-Regular;
@@ -42,7 +48,9 @@
     --cus-lineht-11: 1.4rem;
     --cus-lineht-12: 1.2rem;
 
-    /* Colors */
+    /* COLORS */
+    --white-color: #fff;
+    --off-white-color: #F1F1F5;
     --black-color: #000;
     --dark-color: #272A39;
 
@@ -51,11 +59,19 @@
     --light-blue-color: #5B70FF;
     --extra-light-blue-color: #C5DDFF;
     --light-grey-color: #8291B2;
-    --light-grey-color2: #91A2C6;
+    --light-grey-color-2: #91A2C6;
     --green-color: #60EDCE;
     --light-purple-color: #EAEAFF;
 
     /* PADDING_MARGIN VARIABLES */
+    --zero: 0;
+    --zero-auto: var(--zero) auto;
+    --top-bottom-14: 0.875rem;
+    --top-bottom-27: 1.688rem;
+    --left-right-10: 0.625rem;
+    --left-right-20: var(--zero) 1.25rem;
+    --left-36: var(--zero) var(--zero) var(--zero) 2.25rem;
+    --right-52: var(--zero) 3.25rem var(--zero) var(--zero);
     --p-b-0: 0;
     --p-b-94: 9.4rem;
     --p-t-125: 12.5rem;
@@ -66,5 +82,25 @@
     --p-x-70: 7rem;
     --p-x-110: 11rem;
     --border-width: .2rem;
+    --border-width-1: 0.063rem;
     --p-top-145: 14.5rem;
+    
+    /* Alignment */
+    --text-center: center;
+
+    /* DISPLAY */
+    --flex: flex;
+    --flex-wrap: wrap;
+    --flex-1: 1;
+    --item-center: center;
+    --zindex-999: 999;
+
+    --top-header-font:
+        var(--font-weight-normal) var(--cus-size-6)/var(--cus-lineht-6) var(--helvetica-regular);
+
+    --top-bottom-14-left-right-10:
+        var(--top-bottom-14) var(--left-right-10);
+
+    --top-bottom-27--left-right-10:
+        var(--top-bottom-27) var(--left-right-10);
 }
