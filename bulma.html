@@ -7,51 +7,111 @@
   <meta name="author" content="Your Name">
   <meta name="description" content="Example description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="assets/css/custom-style.css">
-
   <link rel="icon" type="image/x-icon" href="" />
 </head>
 
 <body>
   <header>
     <div class="top-header">
-      We are experiencing an outage and will be back up shortly, Thank you for your patience.
+      <div class="header-container">
+        We are experiencing an outage and will be back up shortly, Thank you for your patience.
+      </div>
     </div>
     <div class="bottom-header">
-      <div class="header-left">
-        <span class="hamburger">
-
-        </span>
-        <span class="site-logo"><img src="assets/images/SP-W-logo.png" alt=""></span>
-      </div>
-      <div class="header-right">
-        <nav>
-          <a href="">Practices</a>
-          <a href="">Patients</a>
-          <span class="separator"></span>
-          <a href="">Go to Dashboard</a>
-        </nav>
+      <div class="header-container display-flex align-item-center">
+        <div class="header-left">
+          <span class="hamburger">
+  
+          </span>
+          <span class="site-logo"><img src="assets/images/SP-W-logo.png" alt=""></span>
+        </div>
+        <div class="header-right display-flex align-item-center">
+          <nav>
+            <a href="" class="active">Practices</a>
+            <a href="" class="">Patients</a>
+            <span class="separator"></span>
+            <a href="" class="">Go to Dashboard</a>
+          </nav>
+          <button class="button is-rounded is-bold is-green mar-left-36">Sign up</button>
+        </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="section">
+    <section class="section section-y-125-0">
       <div class="container">
-        <h1 class="title">
-          Hello World
-        </h1>
-        <p class="subtitle">
-          My first website with <strong>Bulma</strong>!
-        </p>
+        <div class="columns">
+          <div class="column is-6">
+            <div class="intro-slider">
+              <div class="item has-text-centered">
+                <h1 class="title hero-extrabold font-52 line-height-62 black mb-22">
+                  World’s simplest payments platform from <span class="span-blue">check-in</span> to <span
+                    class="span-blue">checkout</span>
+                </h1>
+                <p class="font-24 line-height-34 blue-dark p-x-70 mb-27">Same plans, more options. 100% digital. 100%
+                  awesome.</p>
+                <button class="button is-rounded is-bold mb-27">Get Airpay</button>
+                <p class="font-12 line-height-18 blue-dark mb-2">Request Meeting | Contact Sales</p>
+                <p class="font-12 line-height-18 blue-dark p-x-110">By getting started, I agree to the <a href="#"
+                    class="blue-dark a-underline">Payment Services Agreement</a>, <a href="#"
+                    class="blue-dark a-underline">Program Agreement</a>, <a href="#"
+                    class="blue-dark a-underline">Privacy Policy</a> & <a href="#"
+                    class="blue-dark a-underline">E-Consent</a></p>
+              </div>
+
+              <div class="item has-text-centered">
+                <h1 class="title hero-extrabold font-52 line-height-62 black mb-22">
+                  World’s simplest payments platform from <span class="span-blue">check-in</span> to <span
+                    class="span-blue">checkout</span>
+                </h1>
+                <p class="font-24 line-height-34 blue-dark p-x-70 mb-27">Same plans, more options. 100% digital. 100%
+                  awesome.</p>
+                <button class="button is-rounded is-bold mb-27">Get Airpay</button>
+                <p class="font-12 line-height-18 blue-dark mb-2">Request Meeting | Contact Sales</p>
+                <p class="font-12 line-height-18 blue-dark p-x-110">By getting started, I agree to the <a href="#"
+                    class="blue-dark a-underline">Payment Services Agreement</a>, <a href="#"
+                    class="blue-dark a-underline">Program Agreement</a>, <a href="#"
+                    class="blue-dark a-underline">Privacy Policy</a> & <a href="#"
+                    class="blue-dark a-underline">E-Consent</a></p>
+              </div>
+
+              <div class="item has-text-centered">
+                <h1 class="title hero-extrabold font-52 line-height-62 black mb-22">
+                  World’s simplest payments platform from <span class="span-blue">check-in</span> to <span
+                    class="span-blue">checkout</span>
+                </h1>
+                <p class="font-24 line-height-34 blue-dark p-x-70 mb-27">Same plans, more options. 100% digital. 100%
+                  awesome.</p>
+                <button class="button is-rounded is-bold mb-27">Get Airpay</button>
+                <p class="font-12 line-height-18 blue-dark mb-2">Request Meeting | Contact Sales</p>
+                <p class="font-12 line-height-18 blue-dark p-x-110">By getting started, I agree to the <a href="#"
+                    class="blue-dark a-underline">Payment Services Agreement</a>, <a href="#"
+                    class="blue-dark a-underline">Program Agreement</a>, <a href="#"
+                    class="blue-dark a-underline">Privacy Policy</a> & <a href="#"
+                    class="blue-dark a-underline">E-Consent</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="column pos-relative">
+            <img src="assets/img/new-asset-calendar.png">
+            <img class="pos-absolute mobile-header" src="assets/img/Terminal-WisePOSE-01.png">
+            <a href="#" class="pos-absolute how-it-works">
+              <img src="assets/img/player-thumbnail-3.png">
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer></footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src=""></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/slick.min.js"></script>
+  <script type="text/javascript" src="custom.js"></script>
 </body>
 
 </html>
