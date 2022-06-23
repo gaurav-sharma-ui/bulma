@@ -9,6 +9,16 @@ html {
     max-width: var(--container);
 }
 
+/* Common Styles */
+.display-flex {
+    display: var(--flex);
+}
+.align-item-center {
+    align-items: center;
+}
+.mar-left-36 {
+    margin-left: var(--left-36);
+}
 /* Header ST */
 header {
     position: sticky;
@@ -24,5 +34,33 @@ header {
 }
 .bottom-header {
     background-color: var(--dark-color);
-    padding: var(--top-bottom-14);
+    padding: var(--top-bottom-27);
+}
+.header-container {
+    max-width: var(--header-container);
+    margin: var(--zero-auto);
+}
+.header-left {
+    flex: var(--flex-1);
+}
+header nav a {
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-family: var(--hero-extra-bold);
+    color: var(--light-grey-color-2);
+    padding: var(--left-right-20);
+}
+header nav a.active {
+    font-weight: var(--font-weight-900);
+    color: var(--light-blue-color);
+}
+.separator {
+    margin: var(--left-right-20);
+    border-right-width: var(--border-width-1);
+    border-right-style: solid;
+    border-color: var(--light-blue-color);
+}
+.is-green {
+    background-color: var(--green-color);
 }
