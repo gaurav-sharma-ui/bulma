@@ -16,6 +16,11 @@ html {
 .align-item-center {
     align-items: var(--item-center);
 }
+.row-wrap-item-center {
+    display: var(--flex);
+    flex-wrap: var(--flex-wrap);
+    align-items: var(--item-center);
+}
 .mar-left-36 {
     margin: var(--left-36);
 }
@@ -31,11 +36,11 @@ header {
     font: var(--top-header-font);
     color: var(--off-white-color);
     text-align: var(--text-center);
-    padding: var(--top-bottom-14);
+    padding: var(--top-bottom-14-left-right-10);
 }
 .bottom-header {
     background-color: var(--dark-color);
-    padding: var(--top-bottom-27);
+    padding: var(--top-bottom-27--left-right-10);
 }
 .header-container {
     max-width: var(--header-container);
@@ -47,10 +52,6 @@ header {
 .hamburger {
     margin: var(--right-52);
     cursor: pointer;
-}
-header nav {
-    display: var(--flex);
-    align-items: var(--item-center);
 }
 header nav a, header nav a:hover {
     font-weight: var(--font-weight-400);

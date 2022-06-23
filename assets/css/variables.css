@@ -89,8 +89,9 @@
     /* PADDING_MARGIN VARIABLES */
     --zero: 0;
     --zero-auto: var(--zero) auto;
-    --top-bottom-14: 0.875rem var(--zero);
-    --top-bottom-27: 1.688rem var(--zero);
+    --top-bottom-14: 0.875rem;
+    --top-bottom-27: 1.688rem;
+    --left-right-10: 0.625rem;
     --left-right-20: var(--zero) 1.25rem;
     --left-36: var(--zero) var(--zero) var(--zero) 2.25rem;
     --right-52: var(--zero) 3.25rem var(--zero) var(--zero);
@@ -109,12 +110,19 @@
 
     /* DISPLAY */
     --flex: flex;
+    --flex-wrap: wrap;
     --flex-1: 1;
     --item-center: center;
     --zindex-999: 999;
-    
+
     --top-header-font:
         var(--font-weight-normal) var(--font-size-14)/var(--line-height-22) var(--helvetica-regular);
+
+    --top-bottom-14-left-right-10:
+        var(--top-bottom-14) var(--left-right-10);
+
+    --top-bottom-27--left-right-10:
+        var(--top-bottom-27) var(--left-right-10);
 
 }
 
