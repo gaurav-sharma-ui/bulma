@@ -37,6 +37,9 @@ body{
 .container:not(.is-max-desktop):not(.is-max-widescreen) {
     max-width: var(--container);
 }
+.section{
+    padding: 0;
+}
 
 /* FONTS CSS*/
 
@@ -44,24 +47,35 @@ body{
     font-family: var(--hero-extra-bold);
 }
 
-.font-52{
-    font-size: var(--font-size-52);
+.cus-size-1{
+    font-size: var(--cus-size-1);
 }
-.font-24{
-    font-size: var(--font-size-24);
+.cus-size-3{
+    font-size: var(--cus-size-3);
 }
 
-.font-12{
-    font-size: var(--font-size-12);
+.cus-size-5{
+    font-size: var(--cus-size-5);
 }
-.line-height-62{
-    line-height: var(--line-height-62);
+
+.cus-size-8{
+    font-size: var(--cus-size-8);
 }
-.line-height-34{
-    line-height: var(--line-height-34);
+
+.cus-lineht-1{
+    line-height: var(--cus-lineht-1);
 }
-.line-height-18{
-    line-height: var(--line-height-18);
+
+.cus-lineht-3{
+    line-height: var(--cus-lineht-3);
+}
+
+.cus-lineht-4{
+    line-height: var(--cus-lineht-4);
+}
+
+.cus-lineht-8{
+    line-height: var(--cus-lineht-8);
 }
 
 /* FONTS COLOR */
@@ -83,11 +97,19 @@ body{
 }
 
 .mb-22{
-    margin-bottom: var(--mb-22);
+    margin-bottom: var(--mb-22) !important;
+}
+
+.mb-0{
+    margin-bottom: var(--mb-0) !important;
 }
 
 .mb-27{
     margin-bottom: var(--mb-27);
+}
+
+.mb-45{
+    margin-bottom: var(--mb-45);
 }
 
 .p-x-70{
@@ -98,6 +120,9 @@ body{
     padding: 0 var(--p-x-110);
 }
 
+.seperator{
+    margin: 0px 10px;
+}
 /* BUTTON STYLES */
 .button.is-rounded {
     border-color: var(--primary-color);
@@ -118,9 +143,19 @@ body{
 }
 /* MAIN_SLIDER SECTION */
 
-.section-y-125-0{
-    padding-top: var(--padding-125);
-    padding-bottom: var(--padding-0);
+.p-b-0{
+    padding-bottom: var(--p-b-0);
+}
+
+.p-b-94{
+    padding-bottom: var(--p-b-94);
+}
+.p-t-125{
+    padding-top: var(--p-t-125);
+}
+
+.p-t-145{
+    padding-top: var(--p-top-145);
 }
 
 .pos-relative{
@@ -139,4 +174,11 @@ body{
 .how-it-works{
     bottom: 30px;
     left: 29%;
+}
+
+.animation-bg{
+    padding: 13.6rem 0;
+    background-image: url(../img/2021_ART_particles-rect-XL-3@2x.png);
+    background-repeat: repeat-x;
+    margin-top: 7rem;
 }
