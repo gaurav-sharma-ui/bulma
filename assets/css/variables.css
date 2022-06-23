@@ -29,7 +29,7 @@
     --global-font-size: 62.5%;
 
     /* CONTAINER WIDTH */
-    --header-container: 80rem;
+    --header-container: 106.6rem;
     --container: 122.5rem;
 
     /* FONT WEIGHT */
@@ -94,7 +94,7 @@
     --left-right-20: var(--zero) 1.25rem;
     --left-36: var(--zero) var(--zero) var(--zero) 2.25rem;
     --right-52: var(--zero) 3.25rem var(--zero) var(--zero);
-    --padding-0: 0;
+    --padding-0: var(--zero);
     --padding-125: 12.5rem;
     --mb-22: 2.2rem;
     --mb-27: 2.7rem;
@@ -111,10 +111,11 @@
     --flex: flex;
     --flex-1: 1;
     --item-center: center;
-
+    --zindex-999: 999;
+    
     --top-header-font:
         var(--font-weight-normal) var(--font-size-14)/var(--line-height-22) var(--helvetica-regular);
-        
+
 }
 
 html {

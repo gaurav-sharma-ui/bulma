@@ -24,6 +24,7 @@ header {
     position: sticky;
     top: var(--zero);
     left: var(--zero);
+    z-index: var(--zindex-999);
 }
 .top-header {
     background-color: var(--blue-color);
@@ -68,6 +69,7 @@ header nav a.active {
     border-right-width: var(--border-width-1);
     border-right-style: solid;
     border-color: var(--light-blue-color);
+    height: 1.75rem;
 }
 
 .is-green {
