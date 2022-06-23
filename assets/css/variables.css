@@ -92,7 +92,8 @@
     --top-bottom-14: 0.875rem var(--zero);
     --top-bottom-27: 1.688rem var(--zero);
     --left-right-20: var(--zero) 1.25rem;
-    --left-36: 2.25rem;
+    --left-36: var(--zero) var(--zero) var(--zero) 2.25rem;
+    --right-52: var(--zero) 3.25rem var(--zero) var(--zero);
     --padding-0: 0;
     --padding-125: 12.5rem;
     --mb-22: 2.2rem;
@@ -109,10 +110,11 @@
     /* DISPLAY */
     --flex: flex;
     --flex-1: 1;
+    --item-center: center;
 
     --top-header-font:
         var(--font-weight-normal) var(--font-size-14)/var(--line-height-22) var(--helvetica-regular);
-
+        
 }
 
 html {
