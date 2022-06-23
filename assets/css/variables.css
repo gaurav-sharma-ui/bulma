@@ -6,6 +6,12 @@
     /*CONTAINER WIDTH*/
     --container: 122.5rem;
 
+    /* Font weight */
+    --font-weight-normal: normal;
+
+    /* Font Type */
+    --helvetica-font: Helvetica;
+
     /* FONT SIZE */
     --font-size-52: 5.2rem;
     --font-size-48: 4.8;
@@ -35,6 +41,8 @@
     --line-height-12: 1.2rem;
 
     /* Colors */
+    --white-color: #fff;
+    --off-white-color: #F1F1F5;
     --black-color: #000;
     --dark-color: #272A39;
     --primary-color: #1D1D30;
@@ -45,4 +53,16 @@
     --light-grey-color2: #91A2C6;
     --green-color: #60EDCE;
     --light-purple-color: #EAEAFF;
+
+    /* Integer Value */
+    --zero: 0;
+    --top-bottom-14: 14px 0;
+
+    /* Alignment */
+    --text-center: center;
+
+    --top-header-font:
+    var(--font-weight-normal)
+    var(--font-size-14)/var(--line-height-22)
+    var(--helvetica-font)
 }

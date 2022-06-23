@@ -2,8 +2,27 @@
 
 html {
     font-size: var(--global-font-size);
+    background-color: var(--white-color);
 }
 
 .container:not(.is-max-desktop):not(.is-max-widescreen) {
     max-width: var(--container);
+}
+
+/* Header ST */
+header {
+    position: sticky;
+    top: var(--zero);
+    left: var(--zero);
+}
+.top-header {
+    background-color: var(--blue-color);
+    font: var(--top-header-font);
+    color: var(--off-white-color);
+    text-align: var(--text-center);
+    padding: var(--top-bottom-14);
+}
+.bottom-header {
+    background-color: var(--dark-color);
+    padding: var(--top-bottom-14);
 }
