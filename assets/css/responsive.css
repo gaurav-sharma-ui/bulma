@@ -1,0 +1,101 @@
+@media only screen and (max-width: 767px) {  
+  :root {  
+  
+    /* Font Size */
+    --cus-size-1: 3rem;
+    --cus-size-3:1.8rem;
+    --cus-size-2:3rem;
+    --cus-size-5: 1.4rem;
+
+     /* line height */
+    --cus-lineht-1: 3.6rem;
+    --cus-lineht-3:2.4rem;
+    --cus-lineht-2: 3.6rem;
+    --cus-lineht-4: 2.4rem;
+
+    /* PADDING_MARGIN VARIABLES */
+    --p-x-70: 4rem;
+    --p-x-110: 4rem;
+    --mb-56: 2rem;
+    --p-t-125: 6.5rem;
+    --p-top-145: 7.5rem;
+}
+
+.container:not(.is-max-desktop):not(.is-max-widescreen) {
+    padding:0 18px;
+}
+
+.button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea {
+    font-size: 1.1rem;
+}
+
+.button.is-rounded {
+    padding: 0.7rem 3.2rem;
+}
+.m-mb-20{
+    margin-bottom: 2rem !important;
+}
+
+.m-none{
+    display:none;
+}
+.p-small{
+    padding: 0 3rem;
+}
+.mx-wt-7{
+    max-width: 70%;
+}
+.mx-wt-8{
+    max-width: 80%;
+}
+.mx-wt-36{
+    max-width: 36%;
+}
+.mx-wt-15{
+    max-width: 15%;
+}
+.how-it-works {
+    bottom: -50px;
+    left: 41%;
+}
+.mobile-header {
+    right: 26px;
+    bottom: -10rem;
+}
+.hero-mobile-responsive p{
+    font-size: 1.8rem;
+    list-style: 2.8rem;
+    padding: 0 4rem;
+    margin-top: 3rem;
+    margin-bottom:2rem;
+}
+.hero-mobile-responsive button {
+    margin-left: 0 !important;
+}
+.hero-mobile-responsive .is-align-self-center{
+    text-align: center;
+}
+
+.title-group{
+    padding: 2rem 0rem 0 0rem;
+}
+.cust-card {
+    padding: 4rem;
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 2rem;
+}
+.mb-6 {
+    margin-bottom: 0!important;
+}
+.columns.is-variable>.column {
+    padding: 0;
+}
+.facny-bg p {
+    padding: 0;
+}
+.partners-card:last-child {
+    margin-bottom: 4rem;
+}
+
+}

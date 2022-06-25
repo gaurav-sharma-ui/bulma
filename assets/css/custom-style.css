@@ -57,6 +57,32 @@ body{
 .is-border-0 {
     border: var(--zero)!important;
 }
+
+/* SLICK SLIDER CUSTOMIZE */
+.slick-dots{
+    position: initial;
+}
+
+.slick-dots li{
+    width: 1rem;
+    height: 1rem;
+}
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    padding: 0px;
+}
+.slick-dots li button:before {
+     font-size: 20px;
+    line-height: 10px; 
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: var(--light-blue-color);
+}
 .image.is-20x20 {
     height: 20px;
     width: 20px;
@@ -307,6 +333,13 @@ aside .close-side-nav {
     margin-bottom: var(--mb-45);
 }
 
+.mt-50{
+    margin-top: var(--mt-50);
+}
+
+.mt-70{
+    margin-top: var(--mt-70);
+}
 .mb-56{
     margin-bottom: var(--mb-56);
 }
@@ -357,6 +390,10 @@ padding: var(--p-y-44) 0;
     background-color: transparent;
 }
 
+.is-black{
+ background-color: var(--black-color);
+ color: var(--white-color) !important;
+}
 
 .button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea{
     font-size: 1.4rem;
@@ -389,6 +426,146 @@ padding: var(--p-y-44) 0;
     background-repeat: repeat-x;
     margin-top: 7rem;
 }
+
+/* AKS css start */
+
+.bg1{
+    background: url(../img/gradient.png) center 3.5rem no-repeat;
+    background-size: initial;
+}
+.title-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 4rem 0 4rem;
+}
+.cust-card {
+    padding: 3rem 5rem;
+    background: #FFFFFF;
+    box-shadow: 0 2px 19px 0 #dbdfff;
+    border-radius: 45px;
+    min-height: 300px;
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cust-card span {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.cust-card span.digital-pay img {
+    margin-top: 1.5rem;
+}
+.cust-card h3 {
+    font-size: var(--cus-size-5);
+    line-height: var(--cus-lineht-7);
+    font-family: var(--helvetica-regular);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+}
+.cust-card p {
+    font-size: var(--cus-size-6);
+    line-height: var(--cus-lineht-5);
+    font-family: var(--helvetica-regular);
+}
+.pay-over-time {
+    flex-direction: column;
+    align-items: center;
+}
+.pay-over-time .airpay-plan {
+    margin-left: 25%;
+    margin-top: 5rem;
+}
+.pay-over-time .person-ondesk {
+    margin-top: -15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 5%;
+}
+.person-ondesk a {
+    display: inline-flex;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+}
+.facny-bg {
+    background: url(../img/ART_600x600-Confetti-3.png) no-repeat top center;
+    padding: 0 7rem 9rem 7rem;
+}
+.facny-bg p {
+    padding: 0 5rem;
+}
+.cust-position {
+    background-position: center 21rem;
+}
+.more {
+    background: url(../img/Dropdown-5B70FF.png) no-repeat left center;
+    display: flex;
+    margin-top: 2.5rem;
+    font-size: var(--cus-size-8);
+    line-height: var(--cus-lineht-8);
+    padding-left: 1.75rem;
+    color: #1D1D30;
+    font-weight: bold;
+}
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.partners-card {
+    padding: 2.5rem;
+    box-shadow: 0 2px 19px 0 #dbdfff;
+    border-radius: 30px;
+    min-height: 15rem;
+    margin-top: 5.5rem;
+}
+.partners-card:first-child {
+    margin-top: 0;
+}
+
+.partner {
+    display: flex;
+    flex-direction: column;
+}
+.partner h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.partner .top-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.partner .top-head h4 {
+    margin: 0;
+}
+
+.partner .top-head .partner-review {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 19px 0 #bec2df;
+    margin-top: -5.5rem;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partner-review img {
+    width: 55%;
+}
+
+/* AKS css end */
 .navbar-burger span {
     background-color: var(--blue-color);
 }
