@@ -53,13 +53,14 @@
     --off-white-color: #F1F1F5;
     --black-color: #000;
     --dark-color: #272A39;
-
     --primary-color: #1D1D30;
     --blue-color: #5B44FD;
     --light-blue-color: #5B70FF;
+    --light-blue-color-2: #d2d1ff;
     --extra-light-blue-color: #C5DDFF;
     --light-grey-color: #8291B2;
     --light-grey-color-2: #91A2C6;
+    --light-grey-color-3: #f6f6fa;
     --green-color: #60EDCE;
     --light-purple-color: #EAEAFF;
 
@@ -93,6 +94,7 @@
     --flex-wrap: wrap;
     --flex-1: 1;
     --item-center: center;
+    --pointer: pointer;
     --zindex-999: 999;
 
     --top-header-font:
