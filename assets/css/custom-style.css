@@ -32,13 +32,83 @@ html {
 body{
     font-family: var(--hero-regular);
     color: var(--black-color);
+    background-color: var(--white-color);
 }
 
 .container:not(.is-max-desktop):not(.is-max-widescreen) {
     max-width: var(--container);
 }
+
+/* Common Styles */
+.row-wrap-item-center {
+    display: var(--flex);
+    flex-wrap: var(--flex-wrap);
+    align-items: var(--item-center);
+}
+.mar-left-36 {
+    margin: var(--left-36);
+}
+.is-green {
+    background-color: var(--green-color);
+}
+.is-blue-bg {
+    background-color: var(--blue-color);
+}
+.is-border-0 {
+    border: var(--zero)!important;
+}
+
+/* Header ST */
+header {
+    position: sticky;
+    top: var(--zero);
+    left: var(--zero);
+    z-index: var(--zindex-999);
+}
+.top-header {
+    background-color: var(--blue-color);
+    font: var(--top-header-font);
+    color: var(--off-white-color);
+    text-align: var(--text-center);
+    padding: var(--top-bottom-14-left-right-10);
+}
+.bottom-header {
+    background-color: var(--dark-color);
+    padding: var(--top-bottom-27--left-right-10);
+}
+.header-container {
+    max-width: var(--header-container);
+    margin: var(--zero-auto);
+}
+.header-left {
+    flex: var(--flex-1);
+}
+.hamburger {
+    margin: var(--right-52);
+    cursor: var(--pointer);
+}
+header nav a, header nav a:hover {
+    font-weight: var(--font-weight-400);
+    font-size: var(--cus-size-6);
+    line-height: var(--cus-lineht-7);
+    font-family: var(--hero-extra-bold);
+    color: var(--light-grey-color-2);
+    padding: var(--left-right-20);
+}
+header nav a.active {
+    font-weight: var(--font-weight-900);
+    color: var(--light-blue-color);
+}
+.separator {
+    margin: var(--left-right-20);
+    border-right-width: var(--border-width-1);
+    border-right-style: solid;
+    border-color: var(--light-blue-color);
+    height: 1.75rem;
+}
+
 .section{
-    padding: 0;
+    padding: var(--zero);
 }
 
 /* FONTS CSS*/
@@ -163,7 +233,7 @@ padding: var(--p-y-44) 0;
 }
 
 .seperator{
-    margin: 0px 10px;
+    margin: var(--zero) 10px;
 }
 /* BUTTON STYLES */
 .button.is-rounded {
@@ -212,4 +282,36 @@ padding: var(--p-y-44) 0;
     background-image: url(../img/2021_ART_particles-rect-XL-3@2x.png);
     background-repeat: repeat-x;
     margin-top: 7rem;
+}
+.navbar-burger span {
+    background-color: var(--blue-color);
+}
+.section-3 .tabs .tab li {
+    border-bottom: 3px solid var(--light-blue-color-2);
+    cursor: var(--pointer);
+    font-size: var(--cus-size-3);
+    padding-bottom: var(--cus-size-7);
+}
+.section-3 .tabs .tab li.is-active {
+    border-bottom: 3px solid var(--light-blue-color);
+}
+.section-3 .tabs ul {
+    border-bottom: 2px solid var(--light-grey-color-3);
+    min-height: 5rem;
+}
+.section-3 .tabs ul li.is-two-fifths div {
+    width: 90%;
+    white-space: initial;
+}
+.section-3 .tabs.is-large {
+    font-size: var(--cus-size-5);
+    line-height: var(--cus-lineht-7);
+}
+.section-3 .tabs ul li.is-two-fifths span {
+    font-family: var(--helvetica-regular);
+    font-size: var(--cus-size-8);
+    color: var(--light-grey-color);
+}
+.total {
+    font-family: var(--hero-extra-bold);
 }
