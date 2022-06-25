@@ -17,6 +17,8 @@
     --p-x-70: 4rem;
     --p-x-110: 4rem;
     --mb-56: 2rem;
+    --p-t-125: 6.5rem;
+    --p-top-145: 7.5rem;
 }
 
 .container:not(.is-max-desktop):not(.is-max-widescreen) {
