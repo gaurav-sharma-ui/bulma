@@ -277,6 +277,10 @@ padding: var(--p-y-44) 0;
     background-color: transparent;
 }
 
+.is-black{
+ background-color: var(--black-color);
+ color: var(--white-color) !important;
+}
 
 .button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea{
     font-size: 1.4rem;
