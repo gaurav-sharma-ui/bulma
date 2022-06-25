@@ -1,5 +1,6 @@
 @import "variable.css";
 
+
 @font-face {
   font-family: HeroNew-Regular;
   src: url(../fonts/HeroNewRegular.woff);
@@ -32,13 +33,108 @@ html {
 body{
     font-family: var(--hero-regular);
     color: var(--black-color);
+    background-color: var(--white-color);
 }
 
 .container:not(.is-max-desktop):not(.is-max-widescreen) {
     max-width: var(--container);
 }
+
+/* Common Styles */
+.row-wrap-item-center {
+    display: var(--flex);
+    flex-wrap: var(--flex-wrap);
+    align-items: var(--item-center);
+}
+.mar-left-36 {
+    margin: var(--left-36);
+}
+.is-green {
+    background-color: var(--green-color);
+}
+.is-blue-bg {
+    background-color: var(--blue-color);
+}
+.is-border-0 {
+    border: var(--zero)!important;
+}
+
+/* SLICK SLIDER CUSTOMIZE */
+.slick-dots{
+    position: initial;
+}
+
+.slick-dots li{
+    width: 1rem;
+    height: 1rem;
+}
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    padding: 0px;
+}
+.slick-dots li button:before {
+     font-size: 20px;
+    line-height: 10px; 
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: var(--light-blue-color);
+}
+/* Header ST */
+header {
+    position: sticky;
+    top: var(--zero);
+    left: var(--zero);
+    z-index: var(--zindex-999);
+}
+.top-header {
+    background-color: var(--blue-color);
+    font: var(--top-header-font);
+    color: var(--off-white-color);
+    text-align: var(--text-center);
+    padding: var(--top-bottom-14-left-right-10);
+}
+.bottom-header {
+    background-color: var(--dark-color);
+    padding: var(--top-bottom-27--left-right-10);
+}
+.header-container {
+    max-width: var(--header-container);
+    margin: var(--zero-auto);
+}
+.header-left {
+    flex: var(--flex-1);
+}
+.hamburger {
+    margin: var(--right-52);
+    cursor: var(--pointer);
+}
+header nav a, header nav a:hover {
+    font-weight: var(--font-weight-400);
+    font-size: var(--cus-size-6);
+    line-height: var(--cus-lineht-7);
+    font-family: var(--hero-extra-bold);
+    color: var(--light-grey-color-2);
+    padding: var(--left-right-20);
+}
+header nav a.active {
+    font-weight: var(--font-weight-900);
+    color: var(--light-blue-color);
+}
+.separator {
+    margin: var(--left-right-20);
+    border-right-width: var(--border-width-1);
+    border-right-style: solid;
+    border-color: var(--light-blue-color);
+    height: 1.75rem;
+}
+
 .section{
-    padding: 0;
+    padding: var(--zero);
 }
 
 /* FONTS CSS*/
@@ -47,15 +143,27 @@ body{
     font-family: var(--hero-extra-bold);
 }
 
+.heletica{
+    font-family: var(--helvetica-regular);
+}
+
 .cus-size-1{
     font-size: var(--cus-size-1);
 }
+
+.cus-size-2{
+    font-size: var(--cus-size-2);
+}
+
 .cus-size-3{
     font-size: var(--cus-size-3);
 }
 
 .cus-size-5{
     font-size: var(--cus-size-5);
+}
+.cus-size-6{
+    font-size: var(--cus-size-6);
 }
 
 .cus-size-8{
@@ -64,6 +172,10 @@ body{
 
 .cus-lineht-1{
     line-height: var(--cus-lineht-1);
+}
+
+.cus-lineht-2{
+    line-height: var(--cus-lineht-2);
 }
 
 .cus-lineht-3{
@@ -87,15 +199,18 @@ body{
     color: var(--primary-color);
 }
 
+.light-purple-color-bg{
+    background-color: var(--light-purple-color);
+}
+
+.light-grey-color{
+    color: var(--light-grey-color);
+}
 /* HELPERS CLASSES */
 .span-blue{
     color: var(--blue-color)
 }
-
-.mb-5{
-    margin-bottom: var(--mb-22);
-}
-
+ 
 .mb-22{
     margin-bottom: var(--mb-22) !important;
 }
@@ -119,6 +234,16 @@ body{
 .mt-70{
     margin-top: var(--mt-70);
 }
+.mb-56{
+    margin-bottom: var(--mb-56);
+}
+.p-y-44{
+padding: var(--p-y-44) 0;
+}
+
+.p-x-50{
+    padding: 0 var(--p-x-50);
+}
 
 .p-x-70{
     padding: 0 var(--p-x-70);
@@ -127,9 +252,21 @@ body{
 .p-x-110{
     padding: 0 var(--p-x-110);
 }
+ 
+.pb-94{
+    padding-bottom: var(--p-b-94);
+}
+
+.pt-125{
+    padding-top: var(--p-t-125);
+}
+
+.pt-145{
+    padding-top: var(--p-top-145);
+}
 
 .seperator{
-    margin: 0px 10px;
+    margin: var(--zero) 10px;
 }
 /* BUTTON STYLES */
 .button.is-rounded {
@@ -143,6 +280,11 @@ body{
     font-family: var(--hero-bold);
 }
 
+.is-transparent{
+    background-color: transparent;
+}
+
+
 .button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea{
     font-size: 1.4rem;
 }
@@ -150,22 +292,6 @@ body{
     text-decoration: underline;
 }
 /* MAIN_SLIDER SECTION */
-
-.p-b-0{
-    padding-bottom: var(--p-b-0);
-}
-
-.p-b-94{
-    padding-bottom: var(--p-b-94);
-}
-.p-t-125{
-    padding-top: var(--p-t-125);
-}
-
-.p-t-145{
-    padding-top: var(--p-top-145);
-}
-
 .pos-relative{
     position: relative;
 }
@@ -330,3 +456,35 @@ body{
 }
 
 /* AKS css end */
+.navbar-burger span {
+    background-color: var(--blue-color);
+}
+.section-3 .tabs .tab li {
+    border-bottom: 3px solid var(--light-blue-color-2);
+    cursor: var(--pointer);
+    font-size: var(--cus-size-3);
+    padding-bottom: var(--cus-size-7);
+}
+.section-3 .tabs .tab li.is-active {
+    border-bottom: 3px solid var(--light-blue-color);
+}
+.section-3 .tabs ul {
+    border-bottom: 2px solid var(--light-grey-color-3);
+    min-height: 5rem;
+}
+.section-3 .tabs ul li.is-two-fifths div {
+    width: 90%;
+    white-space: initial;
+}
+.section-3 .tabs.is-large {
+    font-size: var(--cus-size-5);
+    line-height: var(--cus-lineht-7);
+}
+.section-3 .tabs ul li.is-two-fifths span {
+    font-family: var(--helvetica-regular);
+    font-size: var(--cus-size-8);
+    color: var(--light-grey-color);
+}
+.total {
+    font-family: var(--hero-extra-bold);
+}
