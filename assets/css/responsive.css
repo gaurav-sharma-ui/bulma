@@ -73,4 +73,27 @@
 .hero-mobile-responsive .is-align-self-center{
     text-align: center;
 }
+
+.title-group{
+    padding: 2rem 0rem 0 0rem;
+}
+.cust-card {
+    padding: 4rem;
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 2rem;
+}
+.mb-6 {
+    margin-bottom: 0!important;
+}
+.columns.is-variable>.column {
+    padding: 0;
+}
+.facny-bg p {
+    padding: 0;
+}
+.partners-card:last-child {
+    margin-bottom: 4rem;
+}
+
 }
