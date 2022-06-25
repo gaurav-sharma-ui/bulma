@@ -76,10 +76,13 @@
     --p-b-0: 0;
     --p-b-94: 9.4rem;
     --p-t-125: 12.5rem;
+    --mt-40: 4rem;
+    --mr-20: 2rem;
+    --mb-15: 1.5rem; 
     --mb-22: 2.2rem; 
     --mb-27: 2.7rem; 
     --mb-45: 4.5rem;
-    --mb-0: 0;
+    --mb-0: var(--zero);
     --p-x-70: 7rem;
     --p-x-110: 11rem;
     --border-width: .2rem;

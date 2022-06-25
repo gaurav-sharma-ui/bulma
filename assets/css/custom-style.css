@@ -57,6 +57,10 @@ body{
 .is-border-0 {
     border: var(--zero)!important;
 }
+.image.is-20x20 {
+    height: 20px;
+    width: 20px;
+}
 
 /* Header ST */
 header {
@@ -275,12 +279,23 @@ header nav a.active {
 .section-3 .tabs.is-large {
     font-size: var(--cus-size-5);
     line-height: var(--cus-lineht-7);
+    border-bottom: 2px solid var(--light-grey-color-3);
 }
 .section-3 .tabs ul li.is-two-fifths span {
     font-family: var(--helvetica-regular);
     font-size: var(--cus-size-8);
     color: var(--light-grey-color);
 }
-.total {
-    font-family: var(--hero-extra-bold);
+.section-3-ftr {
+    margin-top: var(--mt-40);
+}
+.section-3-ftr>.columns {
+    font-size: var(--cus-size-6);
+    margin-bottom: var(--mb-15);
+}
+.section-3-ftr div:last-child {
+    font-size: var(--cus-size-8);
+}
+.section-3-ftr>.columns .icon {
+    margin-right: var(--mr-20);
 }
