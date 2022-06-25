@@ -117,15 +117,27 @@ header nav a.active {
     font-family: var(--hero-extra-bold);
 }
 
+.heletica{
+    font-family: var(--helvetica-regular);
+}
+
 .cus-size-1{
     font-size: var(--cus-size-1);
 }
+
+.cus-size-2{
+    font-size: var(--cus-size-2);
+}
+
 .cus-size-3{
     font-size: var(--cus-size-3);
 }
 
 .cus-size-5{
     font-size: var(--cus-size-5);
+}
+.cus-size-6{
+    font-size: var(--cus-size-6);
 }
 
 .cus-size-8{
@@ -134,6 +146,10 @@ header nav a.active {
 
 .cus-lineht-1{
     line-height: var(--cus-lineht-1);
+}
+
+.cus-lineht-2{
+    line-height: var(--cus-lineht-2);
 }
 
 .cus-lineht-3{
@@ -157,15 +173,18 @@ header nav a.active {
     color: var(--primary-color);
 }
 
+.light-purple-color-bg{
+    background-color: var(--light-purple-color);
+}
+
+.light-grey-color{
+    color: var(--light-grey-color);
+}
 /* HELPERS CLASSES */
 .span-blue{
     color: var(--blue-color)
 }
-
-.mb-5{
-    margin-bottom: var(--mb-22);
-}
-
+ 
 .mb-22{
     margin-bottom: var(--mb-22) !important;
 }
@@ -182,12 +201,35 @@ header nav a.active {
     margin-bottom: var(--mb-45);
 }
 
+.mb-56{
+    margin-bottom: var(--mb-56);
+}
+.p-y-44{
+padding: var(--p-y-44) 0;
+}
+
+.p-x-50{
+    padding: 0 var(--p-x-50);
+}
+
 .p-x-70{
     padding: 0 var(--p-x-70);
 }
 
 .p-x-110{
     padding: 0 var(--p-x-110);
+}
+ 
+.pb-94{
+    padding-bottom: var(--p-b-94);
+}
+
+.pt-125{
+    padding-top: var(--p-t-125);
+}
+
+.pt-145{
+    padding-top: var(--p-top-145);
 }
 
 .seperator{
@@ -205,6 +247,11 @@ header nav a.active {
     font-family: var(--hero-bold);
 }
 
+.is-transparent{
+    background-color: transparent;
+}
+
+
 .button, .file-cta, .file-name, .input, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .select select, .textarea{
     font-size: 1.4rem;
 }
@@ -212,22 +259,6 @@ header nav a.active {
     text-decoration: underline;
 }
 /* MAIN_SLIDER SECTION */
-
-.p-b-0{
-    padding-bottom: var(--p-b-0);
-}
-
-.p-b-94{
-    padding-bottom: var(--p-b-94);
-}
-.p-t-125{
-    padding-top: var(--p-t-125);
-}
-
-.p-t-145{
-    padding-top: var(--p-top-145);
-}
-
 .pos-relative{
     position: relative;
 }
