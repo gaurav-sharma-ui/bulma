@@ -63,44 +63,65 @@
     --light-grey-color-3: #f6f6fa;
     --green-color: #60EDCE;
     --light-purple-color: #EAEAFF;
+    --box-shadow-color: #DBDFFF;
+    --yellow-color: #FFB71B;
+    --orange-color: #FF595A;
 
     /* PADDING_MARGIN VARIABLES */
     --zero: 0;
     --zero-auto: var(--zero) auto;
-    --top-bottom-14: 0.875rem;
-    --top-bottom-27: 1.688rem;
-    --left-right-10: 0.625rem;
+    --top-bottom-14: 1.4rem;
+    --top-bottom-25: 2.5rem;
+    --left-right-10: 1rem;
     --left-right-20: var(--zero) 1.25rem;
     --left-36: var(--zero) var(--zero) var(--zero) 2.25rem;
     --right-52: var(--zero) 3.25rem var(--zero) var(--zero);
-    --p-b-0: 0;
+    --p-b-0: var(--zero);
     --p-b-94: 9.4rem;
     --p-t-125: 12.5rem;
+    --p-tblr-40: 4rem;
+    --p-t-30-lr-20: 3rem 2rem 0;
+    --mt-28: 2.8rem;
+    --mt-40: 4rem;
+    --mt-124: 12.4rem;
+    --mr-10: 1rem;
+    --mr-20: 2rem;
+    --mr-52: 5.2rem;
+    --mb-15: 1.5rem; 
     --mb-22: 2.2rem; 
     --mb-27: 2.7rem; 
+    --mb-34: 3.4rem; 
     --mb-45: 4.5rem;
     --mb-56: 5.6rem;
-    --mb-0: 0;
-    --mt-50: 5rem;
+    --mb-10: 1rem;
+    --mb-0: var(--zero);
+	--mt-50: 5rem;
     --mt-70: 7rem;
-    --p-y-44: 4.4rem;
+	--p-y-44: 4.4rem;
     --p-x-50: 5rem;
     --p-x-70: 7rem;
     --p-x-110: 11rem;
     --border-width: .2rem;
     --border-width-1: 0.063rem;
+    --border-radius-27: 2.7rem;
     --p-top-145: 14.5rem;
+    --mrl-16: 1.6rem;
+    --per-12: 12%;
     
     /* Alignment */
+    --text-left: left;
     --text-center: center;
 
     /* DISPLAY */
+    --block: block;
+    --inline-block: inline-block;
     --flex: flex;
     --flex-wrap: wrap;
     --flex-1: 1;
     --item-center: center;
     --pointer: pointer;
     --zindex-999: 999;
+    --box-shadow: var(--zero) 2px 19px var(--zero) var(--box-shadow-color);
 
     --top-header-font:
         var(--font-weight-normal) var(--cus-size-6)/var(--cus-lineht-6) var(--helvetica-regular);
@@ -108,6 +129,6 @@
     --top-bottom-14-left-right-10:
         var(--top-bottom-14) var(--left-right-10);
 
-    --top-bottom-27--left-right-10:
-        var(--top-bottom-27) var(--left-right-10);
+    --top-bottom-25--left-right-10:
+        var(--top-bottom-25) var(--left-right-10);
 }

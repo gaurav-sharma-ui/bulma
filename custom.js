@@ -6,7 +6,7 @@ $(document).ready(function () {
         speed: 300,
         arrows: false,
         slidesToShow: 1
-    });
+     });
 
     function mobileOnlySlider() {
         $('.mobile-wrap').slick({
@@ -31,5 +31,43 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.payment-steps-1').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        arrows: false,
+        slidesToShow: 1,
+        autoplay: true
+     });    
 });
  
+function openTab(evt, airPayName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+    }
+    document.getElementById(airPayName).style.display = "block";
+    evt.currentTarget.className += " is-active";
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+  function sideNavOpen() {
+    // document.getElementById("sideNav").style.width = "100%";
+    document.getElementById("sideNav").style.left = "0";
+  }
+  
+  function sideNavClose() {
+    if(screen.width <= 767) {
+        document.getElementById("sideNav").style.left = "-75vw";    
+    } else {
+        document.getElementById("sideNav").style.left = "-20vw";
+    }
+  }

@@ -28,12 +28,12 @@
     <div class="bottom-header">
       <div class="header-container row-wrap-item-center">
         <div class="header-left row-wrap-item-center">
-          <span class="navbar-burger is-block ml-0">
+          <button onclick="sideNavOpen();" class="navbar-burger is-block ml-0">
             <span class="is-blue-bg"></span>
             <span class="is-blue-bg"></span>
             <span class="is-blue-bg"></span>
             <!-- <img src="assets/img/hamburger.png"> -->
-          </span>
+          </button>
           <a href="" class="site-logo"><img src="assets/img/SP-W-logo.png" alt="Airpay Financial" title="Airpay Financial"></a>
         </div>
         <div class="header-right row-wrap-item-center">
@@ -120,6 +120,138 @@
           </div>
         </div>
         <p class="cus-size-8 cus-lineht-8 blue-dark is-bold has-text-centered"><span>No setup costs </span><span class="seperator">|</span><span>No cancellation fees</span></p>
+      </div>
+    </section>
+    
+    <section class="section p-b-94 section-3">
+      <div class="container">
+        <div class="is-mobile mb-0">
+          <div class="column is-three-fifths is-offset-one-quarter has-text-centered pb-0">
+            <h2 class="title hero-extrabold cus-size-1 cus-lineht-1 black mb-22">
+              We combine industry leading financing with omni-channel payments
+            </h2>
+            <p class="cus-size-3 cus-lineht-3 blue-dark mb-34">
+              For an all-in-one, unique experience
+            </p>
+            <img src="assets/img/ART_Icon_RGB_01_Dash-award-midnight.png" alt="Art icon" title="Art icon">
+            <p class="cus-size-3 cus-lineht-3 blue-dark mt-28 hero-extrabold">
+              How we stack up
+            </p>
+          </div>
+          <div class="column is-three-fifths is-offset-one-quarter has-text-centered pb-0 tabs is-large">
+            <ul class="column is-offset-one-fifth is-border-0 tab">
+              <li class="column is-two-fifths">
+                <button onclick="openTab(event, 'airPayPlan')" id="defaultOpen" class="tablinks is-active">Airpay Plan</button>
+              </li>
+              <li class="column is-two-fifths">
+                <button onclick="openTab(event, 'airPayPay')" class="tablinks">Airpay Pay</button>
+              </li>
+            </ul>
+            <div id="airPayPlan" class="tabcontent">
+              <ul class="columns">
+                <li class="column is-three-fifths"></li>
+                <li class="column is-ten-per"><img src="assets/img/carecredit-logo-vector.png" alt="CareCredit" title="CareCredit"></li>
+                <li class="column is-ten-per"><img src="assets/img/logo-2021-VetBilling-logo-website-r.png" alt="VetBilling.com" title="VetBilling.com"></li>
+                <li class="column is-ten-per"><img src="assets/img/SP-Mark.png" alt="SP Mark" title="SP Mark"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>Simple, flat rate pricing</div>
+                </li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>No hard credit checks for patients</div>
+                </li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>No set-up fee</div>
+                </li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>Plan management & risk is handled by partner</div>
+                </li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>Vetcove Rating</div>
+                  <span>Leading software review site</span>
+                </li>
+                <li class="column is-ten-per hero-extrabold">3.5</li>
+                <li class="column is-ten-per hero-extrabold">4.0</li>
+                <li class="column is-ten-per hero-extrabold">5.0</li>
+              </ul>
+            </div>
+            <div id="airPayPay" class="tabcontent">
+              <ul class="columns">
+                <li class="column is-three-fifths"></li>
+                <li class="column is-ten-per"><img src="assets/img/carecredit-logo-vector.png" alt="CareCredit" title="CareCredit"></li>
+                <li class="column is-ten-per"><img src="assets/img/logo-2021-VetBilling-logo-website-r.png" alt="VetBilling.com" title="VetBilling.com"></li>
+                <li class="column is-ten-per"><img src="assets/img/SP-Mark.png" alt="SP Mark" title="SP Mark"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>Simple, flat rate pricing</div>
+                </li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>No hard credit checks for patients</div>
+                </li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>No set-up fee</div>
+                </li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>Plan management & risk is handled by partner</div>
+                </li>
+                <li class="column is-ten-per"><img src="assets/img/tick-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+                <li class="column is-ten-per"><img src="assets/img/cross-icon.png"></li>
+              </ul>
+              <ul class="columns">
+                <li class="column is-three-fifths has-text-left">
+                  <div>Vetcove Rating</div>
+                  <span>Leading software review site</span>
+                </li>
+                <li class="column is-ten-per hero-extrabold">3.5</li>
+                <li class="column is-ten-per hero-extrabold">4.0</li>
+                <li class="column is-ten-per hero-extrabold">5.0</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-3-ftr has-text-centered">
+            <div class="columns is-centered"><img src="assets/img/Dash-rate-midnight@2x.png" alt="See pricing" title="See pricing" class="icon is-medium">See pricing</div>
+            <div><strong class="hero-extrabold">Questions?</strong> Email our Sales team</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -292,6 +424,58 @@
       </div>
     </section>
 
+    <section class="section p-b-94 payment-steps">
+      <div class="container">
+        <div class="is-mobile mb-0">
+          <div class="payment-steps-main-bg">
+            <div class="payment-steps-1">
+              <div class="payment-steps-wrap">
+                <div class="payment-step-title">
+                  Make paying convenient
+                </div>
+                <div class="payment-step-lead">
+                  Give your patients more options for paying invoices.
+                </div>
+              </div>
+              <div class="payment-steps-wrap">
+                <div class="payment-step-title">
+                  Make paying convenient
+                </div>
+                <div class="payment-step-lead">
+                  Give your patients more options for paying invoices.
+                </div>
+              </div>
+              <div class="payment-steps-wrap">
+                <div class="payment-step-title">
+                  Make paying convenient
+                </div>
+                <div class="payment-step-lead">
+                  Give your patients more options for paying invoices.
+                </div>
+              </div>
+              <div class="payment-steps-wrap">
+                <div class="payment-step-title">
+                  Make paying convenient
+                </div>
+                <div class="payment-step-lead">
+                  Give your patients more options for paying invoices.
+                </div>
+              </div>
+            </div>
+            <div class="payment-steps-2">
+              <img src="assets/img/payovertime-card.png" alt="Pay over time, with Airpay Plans" title="Pay over time, with Airpay Plans">
+            </div>
+            <div class="payment-steps-3">
+              <img src="assets/img/visa-card.png" alt="Visa" title="Visa" style="margin-right: 3.4rem"><img src="assets/img/master-card.png" alt="Master" title="Master" style="margin-right: 3.4rem"><img src="assets/img/american-card.png" alt="American" title="American" style="margin-right: 2.9rem"><img src="assets/img/discover.png" alt="Discover" title="Discover">
+              <div class="card-icon">
+                <img src="assets/img/apple-pay.png" alt="Apple Pay" title="Apple Pay" style="margin-right: 2.2rem"><img src="assets/img/g-pay.png" alt="Google Pay" title="Google Pay">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section p-b-94 bg1 cust-position">
       <div class="container">
         <div class="columns p-x-110 mb-6 p-b-94">
@@ -425,80 +609,8 @@
 
       </div>
     </section>
-
-     <section class="section p-b-94 section-3">
-      <div class="container">
-        <div class="is-mobile mb-0">
-          <div class="column is-three-fifths is-offset-one-quarter has-text-centered pb-0">
-            <h2 class="title hero-extrabold cus-size-1 cus-lineht-1 black mb-22">
-              We combine industry leading financing with omni-channel payments
-            </h2>
-            <p class="cus-size-3 cus-lineht-3 blue-dark mb-45">
-              For an all-in-one, unique experience
-            </p>
-            <img src="assets/img/ART_Icon_RGB_01_Dash-award-midnight.png" alt="Art icon" title="Art icon">
-            <p class="cus-size-3 cus-lineht-3 blue-dark mb-45">
-              How we stack up
-            </p>
-          </div>
-          <div class="column is-three-fifths is-offset-one-quarter has-text-centered pb-0 tabs is-large">
-            <ul class="column is-offset-two-fifths is-border-0 tab">
-              <li class="column is-two-fifths is-active">Airpay Plan</li>
-              <li class="column is-two-fifths">Airpay Pay</li>
-            </ul>
-            <ul class="columns">
-              <li class="column is-two-fifths"></li>
-              <li class="column is-one-fifth"><img src="assets/img/carecredit-logo-vector.png" alt="CareCredit" title="CareCredit"></li>
-              <li class="column is-one-fifth"><img src="assets/img/logo-2021-VetBilling-logo-website-r.png" alt="VetBilling.com" title="VetBilling.com"></li>
-              <li class="column is-one-fifth"><img src="assets/img/SP-Mark.png" alt="SP Mark" title="SP Mark"></li>
-            </ul>
-            <ul class="columns">
-              <li class="column is-two-fifths has-text-left">
-                <div>Simple, flat rate pricing</div>
-              </li>
-              <li class="column is-one-fifth"><img src="assets/img/cross-icon.png"></li>
-              <li class="column is-one-fifth"><img src="assets/img/cross-icon.png"></li>
-              <li class="column is-one-fifth"><img src="assets/img/tick-icon.png"></li>
-            </ul>
-            <ul class="columns">
-              <li class="column is-two-fifths has-text-left">
-                <div>No hard credit checks for patients</div>
-              </li>
-              <li class="column is-one-fifth"><img src="assets/img/cross-icon.png"></li>
-              <li class="column is-one-fifth"><img src="assets/img/tick-icon.png"></li>
-              <li class="column is-one-fifth"><img src="assets/img/tick-icon.png"></li>
-            </ul>
-            <ul class="columns">
-              <li class="column is-two-fifths has-text-left">
-                <div>No set-up fee</div>
-              </li>
-              <li class="column is-one-fifth"><img src="assets/img/cross-icon.png"></li>
-              <li class="column is-one-fifth"><img src="assets/img/cross-icon.png"></li>
-              <li class="column is-one-fifth"><img src="assets/img/tick-icon.png"></li>
-            </ul>
-            <ul class="columns">
-              <li class="column is-two-fifths has-text-left">
-                <div>Plan management & risk is handled by partner</div>
-              </li>
-              <li class="column is-one-fifth"><img src="assets/img/tick-icon.png"></li>
-              <li class="column is-one-fifth"><img src="assets/img/cross-icon.png"></li>
-              <li class="column is-one-fifth"><img src="assets/img/cross-icon.png"></li>
-            </ul>
-            <ul class="columns">
-              <li class="column is-two-fifths has-text-left">
-                <div>Vetcove Rating</div>
-                <span>Leading software review site</span>
-              </li>
-              <li class="column is-one-fifth total">3.5</li>
-              <li class="column is-one-fifth total">4.0</li>
-              <li class="column is-one-fifth total">5.0</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-     <section class="section pt-145 pb-94">
+    
+    <section class="section pt-145 pb-94">
       <div class="container has-text-centered">
         <div class="columns mb-0">
           <div class="column is-half is-offset-one-quarter pb-0">
@@ -514,6 +626,18 @@
     </section>
   </main>
 	<footer></footer>
+  <aside id="sideNav">
+    <button class="close-side-nav" onclick="sideNavClose();">
+      <svg class="svg-icon" width="20" height="20" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+    </button>
+    <nav>
+      <a href="" class="active">Practices</a>
+      <a href="" class="">Patients</a>
+      <span class="separator"></span>
+      <a href="" class="">Go to Dashboard</a>
+    </nav>
+    <button class="button is-rounded is-bold is-green">Sign up</button>
+  </aside>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>  
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
 	<script type="text/javascript" src="custom.js"></script>
