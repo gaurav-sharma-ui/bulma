@@ -431,7 +431,7 @@ padding: var(--p-y-44) 0;
 
 .bg1{
     background: url(../img/gradient.png) center 3.5rem no-repeat;
-    background-size: initial;
+    background-size: cover;
 }
 .title-group {
     display: flex;
