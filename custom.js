@@ -1,12 +1,15 @@
 
 $(document).ready(function () {
-    $('.intro-slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        arrows: false,
-        slidesToShow: 1
-     });
+    if ($('.intro-slider .item').length > 1) {
+        $('.intro-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 1
+        });
+    }
+   
 
     function mobileOnlySlider() {
         $('.mobile-wrap').slick({

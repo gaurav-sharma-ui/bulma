@@ -78,7 +78,7 @@
     --right-52: var(--zero) 3.25rem var(--zero) var(--zero);
     --p-b-0: var(--zero);
     --p-b-94: 9.4rem;
-    --p-t-125: 12.5rem;
+    --pt-125: 12.5rem;
     --p-tblr-40: 4rem;
     --p-t-30-lr-20: 3rem 2rem 0;
     --mt-28: 2.8rem;
@@ -99,8 +99,8 @@
     --mt-70: 7rem;
 	--p-y-44: 4.4rem;
     --p-x-50: 5rem;
-    --p-x-70: 7rem;
-    --p-x-110: 11rem;
+    --px-70: 7rem;
+    --px-110: 11rem;
     --border-width: .2rem;
     --border-width-1: 0.063rem;
     --border-radius-27: 2.7rem;
