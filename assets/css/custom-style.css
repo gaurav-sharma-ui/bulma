@@ -1,6 +1,5 @@
 @import "variable.css";
 
-
 @font-face {
   font-family: HeroNew-Regular;
   src: url(../fonts/HeroNewRegular.woff);
@@ -84,6 +83,15 @@ body{
     opacity: 1;
     color: var(--light-blue-color);
 }
+.image.is-20x20 {
+    height: 20px;
+    width: 20px;
+}
+.is-twelve-per {
+    flex: none;
+    width: var(--per-12);
+}
+
 /* Header ST */
 header {
     position: sticky;
@@ -100,7 +108,20 @@ header {
 }
 .bottom-header {
     background-color: var(--dark-color);
-    padding: var(--top-bottom-27--left-right-10);
+    padding: var(--top-bottom-25--left-right-10);
+}
+.bottom-header .navbar-burger {
+    margin-right: var(--mr-52);
+}
+.bottom-header .navbar-burger span {
+    width: 2rem;
+    height: 0.3rem;
+}
+.bottom-header .navbar-burger span:first-child {
+    top: calc(50% - 8px);
+}
+.bottom-header .navbar-burger span:nth-child(2) {
+    top: calc(50% - 2px);
 }
 .header-container {
     max-width: var(--header-container);
@@ -113,24 +134,101 @@ header {
     margin: var(--right-52);
     cursor: var(--pointer);
 }
-header nav a, header nav a:hover {
+header nav a, aside nav a {
     font-weight: var(--font-weight-400);
     font-size: var(--cus-size-6);
     line-height: var(--cus-lineht-7);
-    font-family: var(--hero-extra-bold);
     color: var(--light-grey-color-2);
-    padding: var(--left-right-20);
+    padding: 0 1.5rem;
 }
-header nav a.active {
+header nav a:hover, aside nav a:hover {
+    color: var(--light-blue-color);
+}
+header nav a.active, aside nav a.active {
+    font-family: var(--hero-extra-bold);
     font-weight: var(--font-weight-900);
     color: var(--light-blue-color);
 }
+header nav a:first-child {
+    margin-right: var(--mr-10);
+}
+header nav a:nth-child(2) {
+    margin-right: 2.1rem;
+}
+header nav a:nth-child(4) {
+    margin-right: 1.6rem;
+}
+header .button.is-rounded, aside .button.is-rounded {
+    font-size: var(--cus-size-10);
+    padding: 0.6rem 4rem;
+}
+aside .button.is-rounded {
+    margin-top: 1rem;
+}
 .separator {
-    margin: var(--left-right-20);
     border-right-width: var(--border-width-1);
     border-right-style: solid;
     border-color: var(--light-blue-color);
-    height: 1.75rem;
+    height: 2.8rem;
+    margin-right: 0.4rem;
+}
+aside {
+    width: 20vw;
+    height: calc(100vh + 14.1rem);
+    background-color: var(--dark-color);
+    position: fixed;
+    top: 14.1rem;
+    left: -20vw;
+    z-index: 999;
+    padding: 2rem;
+    transition: left 0.2s;
+}
+.close-side-nav button svg {
+    fill: var(--dark-color);
+    border: var(--zero);
+    border-radius: 50%;
+}
+
+aside nav a {
+    display: var(--block);
+    padding: 1rem var(--zero);
+}
+aside nav .separator {
+    display: var(--block);
+    border-right: var(--zero);
+    border-bottom-width: var(--border-width-1);
+    border-bottom-style: solid;
+    border-color: var(--light-blue-color);
+    height: initial;
+    margin: 1rem var(--zero);
+}
+aside .close-side-nav {
+    margin-top: 1rem;
+    margin-left: auto;
+    display: flex;
+    border: 0;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .header-right {
+        display: none;
+    }
+    .row-wrap-item-center {
+        justify-content: space-between;
+    }
+    .bottom-header {
+        padding: 1rem 2rem;
+    }
+    aside {
+        width: 75vw;
+        top: 13.1rem;
+        left: -75vw;
+    }
 }
 
 .section{
@@ -210,7 +308,11 @@ header nav a.active {
 .span-blue{
     color: var(--blue-color)
 }
- 
+
+.mt-28{
+    margin-top: var(--mt-28) !important;
+}
+
 .mb-22{
     margin-bottom: var(--mb-22) !important;
 }
@@ -221,6 +323,10 @@ header nav a.active {
 
 .mb-27{
     margin-bottom: var(--mb-27);
+}
+
+.mb-34{
+    margin-bottom: var(--mb-34);
 }
 
 .mb-45{
@@ -252,7 +358,7 @@ padding: var(--p-y-44) 0;
 .p-x-110{
     padding: 0 var(--p-x-110);
 }
- 
+
 .pb-94{
     padding-bottom: var(--p-b-94);
 }
@@ -464,31 +570,134 @@ padding: var(--p-y-44) 0;
     background-color: var(--blue-color);
 }
 .section-3 .tabs .tab li {
+    width: 41%;
+    padding: var(--zero);
+}
+.section-3 .tabs .tab li button {
+    border: var(--zero);
     border-bottom: 3px solid var(--light-blue-color-2);
     cursor: var(--pointer);
     font-size: var(--cus-size-3);
     padding-bottom: var(--cus-size-7);
+    width: 100%;
+    background: transparent;
+
 }
-.section-3 .tabs .tab li.is-active {
+.section-3 .tabs .tab li .is-active {
     border-bottom: 3px solid var(--light-blue-color);
 }
 .section-3 .tabs ul {
     border-bottom: 2px solid var(--light-grey-color-3);
     min-height: 5rem;
 }
-.section-3 .tabs ul li.is-two-fifths div {
-    width: 90%;
+.tabcontent{
+    display: none;
+}
+.section-3 .tabs ul li.is-three-fifths div {
+    width: 60%;
     white-space: initial;
 }
 .section-3 .tabs.is-large {
     font-size: var(--cus-size-5);
     line-height: var(--cus-lineht-7);
+    border-bottom: 2px solid var(--light-grey-color-3);
 }
-.section-3 .tabs ul li.is-two-fifths span {
+.section-3 .tabs ul li.is-three-fifths span {
     font-family: var(--helvetica-regular);
     font-size: var(--cus-size-8);
     color: var(--light-grey-color);
 }
-.total {
+.section-3-ftr {
+    margin-top: var(--mt-40);
+}
+.section-3-ftr>.columns {
+    font-size: var(--cus-size-6);
+    margin-bottom: var(--mb-15);
+}
+.section-3-ftr div:last-child {
+    font-size: var(--cus-size-8);
+}
+.section-3-ftr>.columns .icon {
+    margin-right: var(--mr-20);
+}
+
+/* Payment Steps */
+.payment-steps {
+    margin-top: var(--mt-124);
+}
+.payment-steps-main-bg {
+    background: url(../img/graphic-phone.png) no-repeat left top/cover;
+    width: 68%;
+    margin: var(--zero-auto);
+}
+.payment-steps-1, .payment-steps-3 {
+    display: var(--inline-block);
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-27);
+    max-width: 41.5rem;
+    text-align: var(--text-center);
+    padding: var(--p-tblr-40);
+    margin-right: -50px;
+}
+.payment-steps-1 {
+    margin-top: -1.5rem;
+}
+.payment-steps-1, .payment-steps-3 {
+    margin-left: 57.6%;
+}
+.payment-step-title {
     font-family: var(--hero-extra-bold);
+    font-size: var(--cus-size-2);
+    line-height: var(--cus-lineht-2);
+    margin-top: 4rem;
+}
+.payment-step-lead {
+    font-size: var(--cus-size-3);
+    line-height: var(--cus-lineht-3);
+    padding: var(--p-t-30-lr-20);
+}
+.payment-steps .slick-dots {
+    width: calc(100% - 80px);
+    bottom: auto;
+    top: 4rem;
+}
+.payment-steps .slick-dots li {
+    border-radius: 50%;
+}
+.payment-steps .slick-dotted.slick-slider {
+    margin-bottom: var(--mb-10);
+}
+.payment-steps .slick-dots li:first-child {
+    background-color: var(--green-color);
+}
+.payment-steps .slick-dots li:nth-child(2) {
+    background-color: var(--light-blue-color);
+}
+.payment-steps .slick-dots li:nth-child(3) {
+    background-color: var(--yellow-color);
+}
+.payment-steps .slick-dots li:nth-child(4) {
+    background-color: var(--orange-color);
+}
+.payment-steps-2 {
+    margin-left: 55.2%;
+}
+.payment-steps-3 {
+    width: 304px;
+    padding: 23px 23px 15px 30px;
+    text-align: var(--text-left);
+}
+.card-icon {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .payment-steps-main-bg {
+        width: 100%;
+    }
+    .payment-steps-1 {
+        padding: 1rem;
+        margin: 0 var(--mrl-16);
+    }
 }
