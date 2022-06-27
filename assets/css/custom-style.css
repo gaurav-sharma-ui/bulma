@@ -31,7 +31,7 @@ html {
 
 body{
     font-family: var(--hero-regular);
-    color: var(--black-color);
+    color: var(--midnight-color);
     background-color: var(--white-color);
 }
 
@@ -48,8 +48,12 @@ body{
 .mar-left-36 {
     margin: var(--left-36);
 }
-.is-green {
+.is-mint-bg {
     background-color: var(--mint-color);
+}
+
+.is-midnight-bg {
+    background-color: var(--midnight-color);
 }
 .is-blue-bg {
     background-color: var(--blue-color);
@@ -57,6 +61,7 @@ body{
 .is-border-0 {
     border: var(--zero)!important;
 }
+
 
 /* SLICK SLIDER CUSTOMIZE */
 .slick-dots{
@@ -102,7 +107,7 @@ header {
 .top-header {
     background-color: var(--blue-color);
     font: var(--top-header-font);
-    color: var(--snow-color);
+    color: var(--gray-light-color);
     text-align: var(--text-center);
     padding: var(--top-bottom-14-left-right-10);
 }
@@ -281,6 +286,11 @@ aside .close-side-nav {
     color: var(--midnight-color);
 }
 
+
+.gray-color{
+    color: var(--gray-light-color);
+}
+
 .light-grey-color{
     color: var(--light-grey-color);
 }
@@ -294,6 +304,11 @@ aside .close-side-nav {
 .section-medium{
     padding-top: var(--pt-125);
     padding-bottom: var(--zero);
+}
+
+.section-large{
+    padding-top: var(--pt-18);
+    padding-bottom: var(--pt-20);
 }
 
 .section-hero{
@@ -398,12 +413,12 @@ background-color: var(--mint-color);
 .button.is-midnight{
 border-color: var(--midnight-color);
 background-color: var(--midnight-color);
-color: var(--snow-color);
+color: var(--gray-light-color);
 }
 
 .button.is-midnight-inverse{
-border-color: var(--snow-color);
-background-color: var(--snow-color);
+border-color: var(--gray-light-color);
+background-color: var(--gray-light-color);
 color: var(--midnight-color);
 }
 
@@ -624,7 +639,7 @@ color: var(--midnight-color);
     font-size: var(--cus-size-8);
     line-height: var(--cus-lineht-8);
     padding-left: 1.75rem;
-    color: #1D1D30;
+    color: var(--midnight-color);
     font-weight: bold;
 }
 .partners {
