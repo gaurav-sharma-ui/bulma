@@ -242,7 +242,7 @@ aside .close-side-nav {
     font-family: var(--hero-extra-bold);
 }
 
-.heletica{
+.has-family-secondary{
     font-family: var(--helvetica-regular);
 }
 
@@ -295,6 +295,13 @@ aside .close-side-nav {
     padding-top: var(--pt-125);
     padding-bottom: var(--zero);
 }
+
+.section-hero{
+    padding-top: var(--py-44);
+    padding-bottom: var(--py-44);
+    margin-top: var(--mt-10);
+}
+
 .span-blue{
     color: var(--blue-color)
 }
@@ -337,7 +344,7 @@ aside .close-side-nav {
 padding: var(--p-y-44) 0;
 }
 
-.p-x-50{
+.px-50{
     padding: 0 var(--p-x-50);
 }
 
@@ -415,6 +422,10 @@ color: var(--midnight-color);
 
 .a-underline{
     text-decoration: underline;
+}
+
+.title-head{
+    margin-bottom: var(--mb-56);
 }
 
 /* MAIN_SLIDER SECTION */
