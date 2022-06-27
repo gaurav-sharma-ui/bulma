@@ -16,7 +16,10 @@
     /* FONT FAMILY */
     --hero-regular: HeroNew-Regular;
     --hero-bold:HeroNew-Bold;
-    --hero-extra-bold: HeroNew-ExtraBold; 
+    --hero-extra-bold: HeroNew-ExtraBold;
+    --heronew-regular: HeroNew-Regular;
+    --heronew-bold:HeroNew-Bold;
+    --heronew-extra-bold: HeroNew-ExtraBold; 
     --helvetica-regular: Helvetica-regular;
     --helvetica-bold: Helvetica-Bold;
 
@@ -93,6 +96,7 @@
     --mb-45: 4.5rem;
     --mb-56: 5.6rem;
     --mt-10: 10rem;
+    --mb-10: 1rem;
     --mb-0: var(--zero);
 	--mt-50: 5rem;
     --mt-70: 7rem;
@@ -103,6 +107,8 @@
     --border-width: .2rem;
     --border-width-1: 0.063rem;
     --border-radius-27: 2.7rem;
+    --border-radius-30: 3rem;
+    --border-radius-45: 4.5rem;
     --p-top-145: 14.5rem;
     --mrl-16: 1.6rem;
     --per-12: 12%;

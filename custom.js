@@ -34,15 +34,6 @@ $(document).ready(function () {
             }
         }
     });
-
-    $('.payment-steps-1').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        arrows: false,
-        slidesToShow: 1,
-        autoplay: true
-     });    
 });
  
 function openTab(evt, airPayName) {
