@@ -234,7 +234,11 @@ aside .close-side-nav {
 
 /* FONTS CSS*/
 
-.hero-extrabold{
+.has-family-primary{
+    font-family: var(--hero-regular);
+}
+
+.has-family-primary-extra-bold{
     font-family: var(--hero-extra-bold);
 }
 
@@ -242,67 +246,51 @@ aside .close-side-nav {
     font-family: var(--helvetica-regular);
 }
 
-.cus-size-1{
+.has-size-1{
     font-size: var(--cus-size-1);
-}
-
-.cus-size-2{
-    font-size: var(--cus-size-2);
-}
-
-.cus-size-3{
-    font-size: var(--cus-size-3);
-}
-
-.cus-size-5{
-    font-size: var(--cus-size-5);
-}
-.cus-size-6{
-    font-size: var(--cus-size-6);
-}
-
-.cus-size-8{
-    font-size: var(--cus-size-8);
-}
-
-.cus-lineht-1{
     line-height: var(--cus-lineht-1);
 }
 
-.cus-lineht-2{
+.has-size-2{
+    font-size: var(--cus-size-2);
     line-height: var(--cus-lineht-2);
 }
 
-.cus-lineht-3{
+.has-size-3{
+    font-size: var(--cus-size-3);
     line-height: var(--cus-lineht-3);
 }
 
-.cus-lineht-4{
+.has-size-5{
+    font-size: var(--cus-size-5);
     line-height: var(--cus-lineht-4);
 }
-
-.cus-lineht-8{
-    line-height: var(--cus-lineht-8);
+.has-size-6{
+    font-size: var(--cus-size-6);
+    line-height: var(--cus-lineht-6)
 }
 
+.has-size-8{
+    font-size: var(--cus-size-8);
+    line-height: var(--cus-lineht-8)
+}
+ 
 /* FONTS COLOR */
-.black{
-    color: var(--black-color);
+ 
+.midnight-color{
+    color: var(--midnight-color);
 }
 
-.blue-dark{
-    color: var(--midnight-color);
+.light-grey-color{
+    color: var(--light-grey-color);
 }
 
 .light-purple-color-bg{
     background-color: var(--light-purple-color);
 }
 
-.light-grey-color{
-    color: var(--light-grey-color);
-}
-/* HELPERS CLASSES */
 
+/* HELPERS CLASSES */
 .section-medium{
     padding-top: var(--pt-125);
     padding-bottom: var(--zero);
@@ -445,19 +433,19 @@ color: var(--midnight-color);
 
 .mobile-header{
     right: -3.5rem;
-    bottom: -22rem;
+    bottom: -36rem;
 }
  
 .how-it-works{
-    bottom: 30px;
-    left: 29%;
+    bottom: -9rem;
+    left: 24rem;
 }
 
 .animation-bg{
     padding: 13.6rem 0;
     background-image: url(../img/2021_ART_particles-rect-XL-3@2x.png);
     background-repeat: repeat-x;
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 
 .cus-block p {
@@ -608,11 +596,11 @@ color: var(--midnight-color);
 .navbar-burger span {
     background-color: var(--blue-color);
 }
-.section-3 .tabs .tab li {
+.tabs.pricing .tab li {
     width: 41%;
     padding: var(--zero);
 }
-.section-3 .tabs .tab li button {
+.tabs.pricing .tab li button {
     border: var(--zero);
     border-bottom: 3px solid var(--light-blue-color-2);
     cursor: var(--pointer);
@@ -622,26 +610,26 @@ color: var(--midnight-color);
     background: transparent;
 
 }
-.section-3 .tabs .tab li .is-active {
+.tabs.pricing .tab li .is-active {
     border-bottom: 3px solid var(--light-blue-color);
 }
-.section-3 .tabs ul {
+.tabs.pricing ul {
     border-bottom: 2px solid var(--light-grey-color-3);
     min-height: 5rem;
 }
 .tabcontent{
     display: none;
 }
-.section-3 .tabs ul li.is-three-fifths div {
+.tabs.pricing ul li.is-three-fifths div {
     width: 60%;
     white-space: initial;
 }
-.section-3 .tabs.is-large {
+.tabs.is-large {
     font-size: var(--cus-size-5);
     line-height: var(--cus-lineht-7);
     border-bottom: 2px solid var(--light-grey-color-3);
 }
-.section-3 .tabs ul li.is-three-fifths span {
+.tabs.pricing ul li.is-three-fifths span {
     font-family: var(--helvetica-regular);
     font-size: var(--cus-size-8);
     color: var(--light-grey-color);
