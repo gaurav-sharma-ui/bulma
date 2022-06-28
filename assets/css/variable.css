@@ -53,11 +53,11 @@
 
     /* COLORS */
     --white-color: #fff;
-    --snow-color: #F1F1F5;
+    --gray-light-color: #F1F1F5;
     --dark-color: #272A39;
     --midnight-color: #1D1D30;
     --blue-color: #5B44FD;
-    --light-blue-color: #5B70FF;
+    --midnight-blue-color: #5B70FF;
     --light-blue-color-2: #d2d1ff;
     --extra-light-blue-color: #C5DDFF;
     --light-grey-color: #8291B2;
@@ -79,8 +79,12 @@
     --left-36: var(--zero) var(--zero) var(--zero) 2.25rem;
     --right-52: var(--zero) 3.25rem var(--zero) var(--zero);
     --p-b-0: var(--zero);
-    --p-b-94: 9.4rem;
+    --pb-94: 9.4rem;
+    --pb-5: 5rem;
+    --pt-18: 18rem;
+    --pt-20: 20rem;
     --pt-125: 12.5rem;
+    --pt-116: 11.6rem;
     --p-tblr-40: 4rem;
     --p-t-30-lr-20: 3rem 2rem 0;
     --mt-28: 2.8rem;
