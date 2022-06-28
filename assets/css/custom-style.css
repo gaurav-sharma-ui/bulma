@@ -55,6 +55,15 @@ body{
 .is-midnight-bg {
     background-color: var(--midnight-color);
 }
+
+.is-midnight-blue {
+    color:var(--midnight-blue-color);
+}
+
+.is-light-blue-color{
+    color: var(--light-blue-color-2);
+}
+
 .is-blue-bg {
     background-color: var(--blue-color);
 }
@@ -317,8 +326,55 @@ aside .close-side-nav {
     margin-top: var(--mt-10);
 }
 
+.section-footer{
+    padding-top: var(--pt-116);
+    padding-bottom: var(--pb-5);
+}
+
+span.separator-small {
+    border-bottom: solid 1px var(--gray-light-color);
+    width: 100%;
+    display: block;
+    padding-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+span.separator-big {
+    border-bottom: solid 1px var(--gray-light-color);
+    width: 100%;
+    display: block;
+    padding-top: 6rem;
+    margin-bottom: 2.5rem;
+}
+
+.extra-link li{
+margin-right: 3rem;
+position: relative;
+}
+
+.extra-link li:last-child{
+    margin-right: 0;
+}
+
+.extra-link li:after{
+    content: "|";
+    position: absolute;
+    width: 1px;
+    margin-left: 13px;
+}
+.extra-link li:last-child:after{
+    content: none;    
+}
+.sub-footer{
+    padding-top: 6rem;
+}
+
 .span-blue{
     color: var(--blue-color)
+}
+
+.max-width-30{
+    max-width: 30rem;
 }
 
 .mt-28{
@@ -374,7 +430,7 @@ padding: var(--p-y-44) 0;
 }
 
 .pb-94{
-    padding-bottom: var(--p-b-94);
+    padding-bottom: var(--pb-94);
 }
 
 .pt-125{
@@ -389,6 +445,17 @@ padding: var(--p-y-44) 0;
     margin: var(--zero) 10px;
 }
 
+.un-list{
+    font-size: var(--cus-size-8);
+    line-height: var(--cus-lineht-4);
+}
+
+.un-list li{
+   margin-bottom: .2rem;
+}
+.un-list li:last-child{
+   margin-bottom: 0;
+}
 
 /* BUTTON STYLES (NEW)*/
 /* button.is-rounded */
