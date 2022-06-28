@@ -57,7 +57,26 @@ body{
 .is-border-0 {
     border: var(--zero)!important;
 }
-
+.is-only-desktop {
+    display: var(--block)!important;
+}
+.is-only-mobile {
+    display: var(--none)!important;
+}
+@media (max-width: 767px) {
+    .is-only-desktop {
+        display: var(--none)!important;
+    } 
+    .is-only-mobile {
+        display: var(--block)!important;
+    }
+}
+.top-space-43 {
+    margin-top: 4.3rem;
+}
+.top-space-165 {
+    margin-top: 16.5rem!important;
+}
 /* SLICK SLIDER CUSTOMIZE */
 .slick-dots{
     position: initial;
@@ -502,6 +521,14 @@ color: var(--midnight-color);
     margin-top: 1rem;
 }
 
+/* OVER TIME IMAGE */
+.over-time-image {
+    max-width: 66.6rem;
+    margin: var(--zero-auto);
+    display: flex;
+    flex-direction: column;
+}
+
 /* MAIN_SLIDER SECTION */
 
 .is-bold{
@@ -541,9 +568,8 @@ color: var(--midnight-color);
 
 /* AKS css start */
 
-.bg1{
-    background: url(../img/gradient.png) center 3.5rem no-repeat;
-    background-size: cover;
+.bg1 {
+    background: url(../img/gradient.png) no-repeat top left/cover;
 }
 .title-group {
     display: flex;
