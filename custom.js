@@ -34,6 +34,21 @@ $(document).ready(function () {
             }
         }
     });
+
+    // CODE FOR NAVIGATION   
+    $('.header-left .dropdown .navbar-burger').on('click', function (e) {
+        if ($('.header-left .dropdown').hasClass('is-active')) {
+            $('.header-left .dropdown').removeClass('is-active');
+        } else {
+            $('.header-left .dropdown').addClass('is-active');
+        }
+        $('body').click(function () {
+            $('.header-left .dropdown.is-active').removeClass('is-active');
+            $('body').off('click'); 
+        });
+        e.stopPropagation(); 
+    })
+ 
 });
  
 function openTab(evt, airPayName) {
