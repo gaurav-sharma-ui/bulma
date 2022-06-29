@@ -127,3 +127,16 @@
     padding: 0;
 }
 }
+
+@media screen 
+  and (min-width: 768px)
+  and (max-width: 1024px){
+    :root{
+        --global-font-size: 50%;
+    }
+   .mobile-header {
+    right: -1.5rem;
+    bottom: -41rem;
+}
+    
+}
