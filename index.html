@@ -28,12 +28,42 @@
     <div class="bottom-header">
       <div class="header-container row-wrap-item-center">
         <div class="header-left row-wrap-item-center">
-          <button onclick="sideNavOpen();" class="navbar-burger is-block ml-0">
-            <span class="is-blue-bg"></span>
-            <span class="is-blue-bg"></span>
-            <span class="is-blue-bg"></span>
-            <!-- <img src="assets/img/hamburger.png"> -->
-          </button>
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="navbar-burger is-block ml-0">
+                <span class="is-blue-bg"></span>
+                <span class="is-blue-bg"></span>
+                <span class="is-blue-bg"></span>
+                <!-- <img src="assets/img/hamburger.png"> -->
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <div class="content-main-header">
+                  <a href="" class="site-logo"><img src="assets/img/SP-W-logo.png" alt="Airpay Financial" title="Airpay Financial"></a>
+                  <span class="icon">
+                    <i class="fas fa-times"></i>
+                  </span>
+                </div>
+                <div class="content-header">
+                  <img class="mb-5" src="assets/img/Dash-time-clock-arrow-6D64FF@2x.png">
+                  <p class="has-size-5">Airpay</p>
+                  <ul class="un-list-nav">
+                    <li class="has-size-6"><a class="midnight-color" href="#">Pricing</a></li>
+                    <li class="has-size-6"><a class="midnight-color" href="#">Enterprise</a></li>
+                    <li class="has-size-6"><a class="midnight-color" href="#">Scratch Plans</a></li>
+                    <li class="has-size-6"><a class="midnight-color" href="#">Go to Dashboard</a></li>
+                  </ul>
+                </div>
+                <div class="content-footer">
+                  <button class="button is-rounded has-family-primary-extra-bold mb-27 is-small is-transparent">Email Sale</button>
+                  <ul>
+                    <li class="has-size-6"><a class="midnight-color" href="#">FaQ's</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="" class="site-logo"><img src="assets/img/SP-W-logo.png" alt="Airpay Financial" title="Airpay Financial"></a>
         </div>
         <div class="header-right row-wrap-item-center">
@@ -43,7 +73,7 @@
             <span class="separator"></span>
             <a href="" class="">Go to Dashboard</a>
           </nav>
-          <button class="button is-small is-rounded is-bold is-mint mar-left-36">Sign up</button>
+          <button class="button is-small is-rounded has-family-primary-extra-bold is-mint mar-left-36">Sign up</button>
         </div>
       </div>
     </div>
@@ -501,19 +531,7 @@
       </div> 
     </section>
   </main>
-	<footer></footer>
-  <aside id="sideNav">
-    <button class="close-side-nav" onclick="sideNavClose();">
-      <svg class="svg-icon" width="20" height="20" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
-    </button>
-    <nav>
-      <a href="" class="active">Practices</a>
-      <a href="" class="">Patients</a>
-      <span class="separator"></span>
-      <a href="" class="">Go to Dashboard</a>
-    </nav>
-    <button class="button is-rounded is-bold is-mint">Sign up</button>
-  </aside>
+	<footer></footer> 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>  
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
 	<script type="text/javascript" src="custom.js"></script>
