@@ -35,19 +35,29 @@ $(document).ready(function () {
         }
     });
 
-    // CODE FOR NAVIGATION   
-    $('.header-left .dropdown .navbar-burger').on('click', function (e) {
-        if ($('.header-left .dropdown').hasClass('is-active')) {
-            $('.header-left .dropdown').removeClass('is-active');
+
+    var $menu = $('.header-left .dropdown');
+    function showHideNav(e) {
+        e.preventDefault();
+
+        if (!$menu.hasClass('is-active')) {
+            $menu.addClass('is-active');
+
+            $(document).one('click', function closeTooltip(e) {
+                // console.log($menu.has(e.target));
+                // console.log($('.header-left .dropdown .navbar-burger').has(e.target));
+                if ($menu.has(e.target).length === 0 && $('.header-left .dropdown .navbar-burger').has(e.target).length === 0) {
+                    $menu.removeClass('is-active');
+                } else if ($menu.hasClass('is-active')) {
+                    $(document).one('click', closeTooltip);
+                }
+            });
         } else {
-            $('.header-left .dropdown').addClass('is-active');
+            $menu.removeClass('is-active');
         }
-        $('body').click(function () {
-            $('.header-left .dropdown.is-active').removeClass('is-active');
-            $('body').off('click'); 
-        });
-        e.stopPropagation(); 
-    })
+    }
+    
+    $('.header-left .dropdown .navbar-burger, .close-icon').on('click', showHideNav);
  
 });
  

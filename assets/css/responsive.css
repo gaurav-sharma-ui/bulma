@@ -120,6 +120,7 @@
     height: 100vh;
     background: #fff;
     margin-top: 0;
+    min-width: auto;
 }
 .dropdown-content{
     box-shadow: none;
