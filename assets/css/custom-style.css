@@ -853,6 +853,17 @@ color: var(--midnight-color);
     margin-top: 8rem;
 }
 
+.content-main-header {
+    background-color: var(--dark-color);
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-menu-mobile-header{
+    padding: 2rem 0;
+}
+
 @media (max-width: 767px) {
     .payment-steps-main-bg {
         width: 100%;
