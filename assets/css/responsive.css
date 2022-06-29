@@ -111,4 +111,32 @@
     padding: 3.6rem 0;
     background-size: contain;
 }
+
+.dropdown.is-active .dropdown-menu{
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    margin-top: 0;
+    min-width: auto;
+}
+.dropdown-content{
+    box-shadow: none;
+    padding: 0;
+}
+}
+
+@media screen 
+  and (min-width: 768px)
+  and (max-width: 1024px){
+    :root{
+        --global-font-size: 50%;
+    }
+   .mobile-header {
+    right: -1.5rem;
+    bottom: -41rem;
+}
+    
 }
