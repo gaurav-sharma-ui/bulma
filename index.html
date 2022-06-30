@@ -28,12 +28,45 @@
     <div class="bottom-header">
       <div class="header-container row-wrap-item-center">
         <div class="header-left row-wrap-item-center">
-          <button onclick="sideNavOpen();" class="navbar-burger is-block ml-0">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="navbar-burger is-block ml-0">
             <span class="is-blue-bg"></span>
             <span class="is-blue-bg"></span>
             <span class="is-blue-bg"></span>
             <!-- <img src="assets/img/hamburger.png"> -->
           </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <div class="content-main-header is-hidden-tablet">
+                  <a href="" class="site-logo"><img src="assets/img/SP-W-logo.png" alt="Airpay Financial" title="Airpay Financial"></a>
+                  <span class="close-icon icon">
+                   <img src="assets/img/cross-icon.png" alt="" class="sr">
+                  </span>
+                </div>
+                <div class="main-menu-mobile-header has-text-centered is-hidden-tablet">
+                  <p class="has-size-8 midnight-color mb-3 m-mb-20"><span>Request Meeting</span><span class="seperator">|</span><span>Contact Sales</span></p>
+                </div>
+                <div class="content-header">
+                  <img class="mb-5" src="assets/img/Dash-time-clock-arrow-6D64FF@2x.png">
+                  <p class="has-size-5">Airpay</p>
+                  <ul class="un-list-nav">
+                    <li class="has-size-6"><a class="midnight-color" href="#">Pricing</a></li>
+                    <li class="has-size-6"><a class="midnight-color" href="#">Enterprise</a></li>
+                    <li class="has-size-6"><a class="midnight-color" href="#">Scratch Plans</a></li>
+                    <li class="has-size-6"><a class="midnight-color" href="#">Go to Dashboard</a></li>
+                  </ul>
+                </div>
+                <div class="content-footer">
+                  <button class="button is-rounded has-family-primary-extra-bold mb-27 is-small is-transparent">Email Sale</button>
+                  <ul>
+                    <li class="has-size-6"><a class="midnight-color" href="#">FaQ's</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="" class="site-logo"><img src="assets/img/SP-W-logo.png" alt="Airpay Financial" title="Airpay Financial"></a>
         </div>
         <div class="header-right row-wrap-item-center">
@@ -43,7 +76,7 @@
             <span class="separator"></span>
             <a href="" class="">Go to Dashboard</a>
           </nav>
-          <button class="button is-small is-rounded is-bold is-mint mar-left-36">Sign up</button>
+          <button class="button is-small is-rounded has-family-primary-extra-bold is-mint mar-left-36">Sign up</button>
         </div>
       </div>
     </div>
@@ -55,7 +88,7 @@
           <div class="column is-6">
             <div class="intro-slider">
               <div class="cus-block item has-text-centered">
-                <h1 class="has-family-primary-extra-bold has-size-1 has-text-black mb-22">
+                <h1 class="has-family-primary-extra-bold has-size-1 mb-22">
                   World’s simplest payments platform from <span class="span-blue">check-in</span> to <span class="span-blue">checkout</span>
                 </h1>
                 <p class="has-size-3 midnight-color mb-27">Same plans, more options. 100% digital. 100% awesome.</p>
@@ -65,7 +98,7 @@
               </div> 
 
              <div class="cus-block item has-text-centered">
-                <h1 class="has-family-primary-extra-bold  has-size-1 has-text-black mb-22">
+                <h1 class="has-family-primary-extra-bold  has-size-1 mb-22">
                   World’s simplest payments platform from <span class="span-blue">check-in</span> to <span class="span-blue">checkout</span>
                 </h1>
                 <p class="has-size-3 midnight-color mb-27">Same plans, more options. 100% digital. 100% awesome.</p>
@@ -75,7 +108,7 @@
               </div>  
 
                <!--  <div class="cus-block item has-text-centered">
-                <h1 class="has-family-primary-extra-bold  has-size-1 has-text-black mb-22">
+                <h1 class="has-family-primary-extra-bold  has-size-1 mb-22">
                   World’s simplest payments platform from <span class="span-blue">check-in</span> to <span class="span-blue">checkout</span>
                 </h1>
                 <p class="has-size-3 midnight-color mb-27">Same plans, more options. 100% digital. 100% awesome.</p>
@@ -99,15 +132,20 @@
     </section>  
     <section class="section animation-bg m-none">
     </section>
-    <section class="section section-medium">
+    <section class="section section-medium section-check-in">
       <div class="container">
         <div class="columns is-justify-content-center mb-0">
           <div class="column is-half has-text-centered pb-0">
-               <img class="mx-wt-7" src="assets/img/new-asset-blocks.png"/>
                <h2 class="title has-family-primary-extra-bold has-size-2 midnight-color mb-22">
                  From check-in to checkout
               </h2>
                <p class="has-size-3 midnight-color mb-45">Simplify billing & collections with Airpay</p>
+
+               <img class="mx-wt-7" src="assets/img/new-asset-blocks.png"/>
+               <h2 class="title has-family-primary-extra-bold has-size-2 midnight-color mb-22 is-hidden-mobile">
+                 From check-in to checkout
+              </h2>
+               <p class="has-size-3 midnight-color mb-45 is-hidden-mobile">Simplify billing & collections with Airpay</p>
            </div>
         </div>
         <div class="columns is-justify-content-center  mb-6">
@@ -276,7 +314,7 @@
                 <img class="mb-3" src="assets/img/Web-contact-us-midnight@2x.png">
                 <p class="has-size-5">Let Airpay transform how your practice processes payments. </p>
               </div>
-              <div class="column is-align-self-center has-text-right">
+              <div class="column is-align-self-center has-text-right-tablet has-text-centered">
                 <button class="button is-rounded has-family-primary-extra-bold is-transparent-bg">Lets Chat</button>
               </div>
             </div>
@@ -284,7 +322,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-medium">
+    <section class="section section-medium section-practise-management-extension">
       <div class="container">
         <div class="columns is-justify-content-center">
           <div class="column is-10">
@@ -295,9 +333,10 @@
               <div class="column">
                 <div class="has-text-centered px-6">
                   <h2 class="has-family-primary-extra-bold has-size-2 midnight-color mb-5">Practice Management Extension</h2>
+                  <p class="has-family-primary-extra-bold has-size-6 midnight-color mb-6">See our list of extensions</p>
                   <p class="has-size-3 midnight-color mb-6">The ultimate in simplicity.</p>
                   <p class="has-size-3 midnight-color mb-6 px-6">Airpay  Connect links our payment processing technology seamlessly with the leading practice management software.</p>
-                  <p class="has-family-primary-extra-bold has-size-6 midnight-color">See our list of extensions</p>
+                  <p class="has-family-primary-extra-bold has-size-6 midnight-color is-hidden-mobile">See our list of extensions</p>
                 </div>
               </div>
             </div>
@@ -305,7 +344,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-medium">
+    <section class="section section-medium section-what-we-are">
       <div class="container">
         <h2 class="has-size-2 has-text-centered has-family-primary-extra-bold title-head">What we’re Airpayin’</h2>
         <div class="columns mobile-wrap is-flex-wrap-wrap">
@@ -374,9 +413,19 @@
     </section>
 
     <section class="section section-medium bg1">
-      <div class="container card-wrapper is-centered">
         <!-- card st -->
-        <div class="card is-big is-transparent has-text-centered">
+      <div class="card is-big is-transparent has-text-centered is-only-mobile">
+        <div class="is-big-title">
+          Product
+        </div>
+        <div class="is-big-card-content">
+          Our goal is to provide simplicity, period.
+        </div>
+      </div>
+      <!-- card ed -->
+      <div class="container card-wrapper is-centered mobile-wrap">
+        <!-- card st -->
+        <div class="card is-big is-transparent has-text-centered is-only-desktop">
           <div class="is-big-title">
             Product
           </div>
@@ -506,18 +555,82 @@
             </div>
           </div>
         </div> -->
-        <div class="columns px-110 mt-70 is-justify-content-center is-mobile">
-            <button class="button is-rounded is-bold" tabindex="0">See pricing</button>          
+        <div class="buttons is-centered top-space-43">
+            <button class="button is-medium is-rounded has-family-primary-extra-bold is-transparent-bg">See pricing</button>
         </div>
-        <div class="columns px-110 mt-70 is-justify-content-center pay-over-time">
-              <div class="airpay-plan">
-                <img src="assets/img/payovertime-card.png" />
+        <div class="over-time-image top-space-165">
+          <div class="first-image">
+            <img src="assets/img/payovertime-card.png">
+            <a href="#"><img src="assets/img/player-thumbnail-3.png"></a>
               </div>
-              <div class="person-ondesk">
-                <img src="assets/img/ART_isometric_NV_Person-desk-Noplant_01.png" />
-                <a href="#"><img src="assets/img/player-thumbnail-3.png" /></a>
+          <div class="second-image">
+            <img src="assets/img/ART_isometric_NV_Person-desk-Noplant_01.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-medium is-justify-content-center">
+      <div class="has-text-centered">
+        <figure>
+          <img src="assets/img/Dash-paper-midnight@2x.png" alt="Airpay Plan types" title="Airpay Plan types">
+        </figure>
+        <h2 class="has-size-3 has-family-primary-extra-bold title-head top-space-10">
+          Airpay Plan types
+        </h2>
+      </div>
+      <div class="container card-wrapper is-justify-content-center mobile-wrap">
+        <!-- card st -->
+        <div class="card is-small is-radius-small has-text-centered">
+          <div class="card-title">
+            Bi-weekly
+          </div>
+          <div class="card-body-content">
+            5 equal payments, paid bi-weekly. 
+          </div>
+        </div>
+        <!-- card ed -->
+        
+        <!-- card st -->
+        <div class="card is-small is-radius-small has-text-centered">
+          <div class="card-title">
+            6 month
+          </div>
+          <div class="card-body-content">
+            6 equal payments, paid monthly.
+          </div>
+        </div>
+        <!-- card ed -->
+        
+        <!-- card st -->
+        <div class="card is-small is-radius-small has-text-centered">
+          <div class="card-title">
+            12 month
+          </div>
+          <div class="card-body-content">
+            12 equal payments, paid monthly.
               </div>
         </div>
+        <!-- card ed -->
+
+        <!-- card st -->
+        <div class="card is-small is-radius-small has-text-centered">
+          <div class="card-title">
+            24 month
+          </div>
+          <div class="card-body-content">
+            24 equal payments, paid monthly.
+          </div>
+        </div>
+        <!-- card ed -->
+      </div>
+
+      <div class="plan-section-footer">
+        <p class="has-family-secondary light-grey-color has-size-8">
+          Airpay Plans are available in 6, 12, 18, and 24 month terms, range in loan amounts from $150 to $10,000, and with annual percentage rates (APR) ranging from 0% to 36% with the lowest rates for borrowers with exceptional credit scores. Monthly payment amounts on a Airpay Plan will depend on the term length, amount financed, and APR. For example, a 12-month Airpay Plan for $10,000 with 5.99% APR would have 12 monthly payments of $860.62 for a total repayment amount of $10,327.44. Signing for a Airpay Plan means the borrower agrees to make all payments in full and on the scheduled due dates. A borrower may incur late fees for partial or late payments that may result in higher interest charges and repayment schedule.<br><br>
+          Bi-weekly Plans require a 20% down payment of the total amount financed, with the remaining amount financed split equally among the four remaining payments due every two weeks. Loan amounts range from $35 to $1,000 and 0% APR. Late payments or payments of less than the full amount may result in late fees. For example, a $200 Bi-weekly Plan would require a 20% down payment of $40. Four equal payments of $40 would be due every two weeks thereafter.<br><br>
+          All payment plans and loans are subject to approval and, with respect to the loan, the rate for which individual borrowers qualify may vary based on individual credit history and other factors.
+        </p>
       </div>
     </section>
 
@@ -630,7 +743,111 @@
           </div>
         </div>
 
-        <div class="columns px-110 mb-6 is-variable is-8 is-desktop pt-145">
+        <section class="section section-medium">
+          <!-- card st -->
+          <div class="card is-big is-transparent has-text-centered is-only-mobile">
+            <figure>
+              <img src="assets/img/Web-FAQs-midnight@2x.png" alt="FAQs" title="FAQs">
+            </figure>
+            <div class="is-big-title">
+              FAQs
+            </div>
+            <div class="is-big-card-content">
+              Read how our product and services work
+            </div>
+          </div>
+          <!-- card ed -->
+          <div class="container card-wrapper is-centered mobile-wrap">
+            <!-- card st -->
+            <div class="card is-big is-transparent has-text-centered is-only-desktop">
+              <figure>
+                <img src="assets/img/Web-FAQs-midnight@2x.png" alt="FAQs" title="FAQs">
+              </figure>
+              <div class="is-big-title">
+                FAQs
+              </div>
+              <div class="is-big-card-content">
+                Read how our product and services work
+              </div>
+            </div>
+            <!-- card ed -->
+            <!-- card st -->
+            <div class="card is-big is-radius-big has-text-centered">
+              <div class="card-inner-wrap">
+                <div class="card-title">
+                  What is your pricing?
+                </div>
+                <div class="card-body-content">
+                  To see pricing for our payment processing solution follow the link below. For Enterprise pricing, email Partners@Airpay.com
+                </div>
+                <div class="card-body-footer">
+                  <img src="assets/img/Dropdown-5B70FF.png"> View pricing
+                </div>
+              </div>
+            </div>
+            <!-- card ed -->
+            <!-- card st -->
+            <div class="card is-big is-radius-big has-text-centered">
+              <div class="card-inner-wrap">
+                <div class="card-title">
+                  Which practice management extensions are you live with?
+                </div>
+                <div class="card-body-content">
+                  Airpay is continuosly building and innovating our payments platform. To view the latest extentions select the link below.
+                </div>
+                <div class="card-body-footer">
+                  <img src="assets/img/Dropdown-5B70FF.png"> View extensions
+                </div>
+              </div>
+            </div>
+            <!-- card ed -->
+            <!-- card st -->
+            <div class="card is-big is-radius-big has-text-centered">
+              <div class="card-inner-wrap">
+                <div class="card-title">
+                  What exactly is Platform?
+                </div>
+                <div class="card-body-content">
+                  Great question! Airpay Platform is a system of technology that brings payment processing and communication tools to pratices.
+                </div>
+                <div class="card-body-footer">
+                  <img src="assets/img/Dropdown-5B70FF.png"> Watch our explainer video
+                </div>
+              </div>
+            </div>
+            <!-- card ed -->
+            <!-- card st -->
+            <div class="card is-big is-radius-big has-text-centered">
+              <div class="card-inner-wrap">
+                <div class="card-title">
+                  What do I need to sign up for Airpay Platform?
+                </div>
+                <div class="card-body-content">
+                  Signing up for Airpay Platform is easy! To get you started we’ll need your practice contact and business information like your EIN/TIN.
+                </div>
+                <div class="card-body-footer">
+                  <img src="assets/img/Dropdown-5B70FF.png"> How to find your EIN/TIN
+                </div>
+              </div>
+            </div>
+            <!-- card ed -->
+            <!-- card st -->
+            <div class="card is-big is-radius-big has-text-centered">
+              <div class="card-inner-wrap">
+                <div class="card-title">
+                  I'm still not sure, do you offer trial periods?
+                </div>
+                <div class="card-body-content">
+                  Airpay offers payment processing solutions for practices large and small. To hear more, schedule a meeting with one of our Airpay Sales Ambassadors.
+                </div>
+                <div class="card-body-footer">
+                  <img src="assets/img/Dropdown-5B70FF.png"> Schedule appointment
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <div class="columns px-110 mb-6 is-variable is-8 is-desktop pt-145">
           <div class="column has-text-centered">
             <div class="title-group">
               <h2 class="title has-family-primary-extra-bold has-size-1 midnight-color mb-22">FAQs</h2>
@@ -684,7 +901,7 @@
               <a href="#" class="more">Schedule appointment</a>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section>
@@ -703,20 +920,115 @@
         <button class="button is-rounded is-bold mb-27 is-black">Book Webinar</button>
       </div>
     </section>
+    
+    <section class="section section-large is-midnight-bg">
+      <div class="container">
+        <div class="columns is-justify-content-center">
+          <div class="column is-half has-text-centered">
+              <div class="cus-block item has-text-centered">
+                <h2 class="has-family-primary-extra-bold has-size-2 gray-color mb-22">
+                  Simplify payment processing  
+                </h2>
+                <p class="has-size-3 gray-color mb-6">In-practice & digital payments, automatic reconciliation, and more.</p>
+                <button class="button is-rounded has-family-primary-extra-bold is-mint mb-6">Get Airpay</button>
+                <p class="has-size-8 gray-color">By getting started, I agree to the <a href="#" class="gray-color a-underline">Payment Services Agreement</a>, <a href="#" class="gray-color a-underline">Program Agreement</a>, <a href="#" class="gray-color a-underline">Privacy Policy</a> & <a href="#" class="gray-color a-underline">E-Consent</a></p>
+              </div>
+           </div>
+        </div>
+      </div> 
+    </section>
+     <section class="section animation-bg mt-0 is-midnight-bg">
+    </section>
+    <section class="section is-midnight-bg section-footer">
+      <div class="container">
+        <div class="columns is-justify-content-center">
+          <div class="column is-10">
+            <p class="has-size-8 is-light-blue-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+            <span class="separator-big"></span>
+          </div>
+        </div>
+        <div class="columns is-justify-content-center">
+          <div class="column is-10">
+            <div class="columns">
+              <div class="column is-7">
+                <div class="columns">
+                  <div class="column is-4">
+                    <p class="is-midnight-blue mb-6 has-size-8 has-family-primary-extra-bold">Business</p>
+                    <ul class="un-list is-light-blue-color">
+                      <li>Visit Dashboard</li>
+                      <li>Pricing</li>
+                      <li>Partners</li>
+                      <li>Book Demo</li>
+                      <li>Practice FAQs</li>
+                      <li>Contact Sales</li>
+                      <li>Practice Support</li>
+                      <li>Refer a Friend</li>
+                    </ul>
+                  </div>
+                  <div class="column is-4">
+                    <p class="is-midnight-blue mb-6 has-size-8 has-family-primary-extra-bold">Consumers</p>
+                    <ul class="un-list is-light-blue-color">
+                      <li>Account login</li>
+                      <li>Find a Plan</li>
+                      <li>Find a Practice</li>
+                      <li>Refer a practice</li>
+                      <li>Practice FAQs</li>
+                      <li>Borrower FAQs</li>
+                      <li>Borrower Support</li>
+                    </ul>
+                  </div>
+                  <div class="column is-4">
+                    <p class="is-midnight-blue mb-6 has-size-8 has-family-primary-extra-bold">Company</p>
+                    <ul class="un-list is-light-blue-color"><li>Meet the team</li>
+                      <li>Careers</li>
+                      <li>Press</li>
+                      <li>Blog</li>
+                      <li>General Inquiries</li>
+                    </ul>
+                    <ul class="un-list is-light-blue-color"><li>Meet the team</li>
+                      <li>Careers</li>
+                      <li>Press</li>
+                      <li>Blog</li>
+                      <li>General Inquiries</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-5">
+                <div class="column is-justify-content-right is-flex">
+                  <div class="max-width-30">
+                    <div class="block">
+                      <img src="assets/img/SP-W-logo.png" />
+                    </div>
+                    <div class="block">
+                      <p class="is-light-blue-color has-size-8 ">Airpay is the leader in payment processing and patient communications for medical practices nationwide. We believe patients deserve access to afforable care, and we enable our vision by creating products and services that simplify and add delight to the patient and practice experiences.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-justify-content-center sub-footer">
+          <div class="column is-10">
+            <p class="has-size-6 is-light-blue-color">Contact. <a href="#">sales</a> or our <a href="#">Partnership Team</a>Or call (888) 888-8888 for practice support.</a></p>
+            <span class="separator-small"></span>
+            <span class="is-light-blue-color is-flex is-justify-content-space-between py-3">
+              <p class="has-size-8">©Airpay, Inc. ©Airpay (NMLS ID#: 1582666) </p>
+                <ul class="is-flex is-flex-wrap-wrap extra-link">
+                  <li><a class="is-light-blue-color" href="#">NMLS Consumer Access</a></li>
+                  <li><a class="is-light-blue-color" href="#">Legal</a></li>
+                  <li><a class="is-light-blue-color" href="#">Credit Education Program</a></li>
+                  <li><a class="is-light-blue-color" href="#">Privacy</a></li>
+                  <li><a class="is-light-blue-color" href="#">Terms</a></li>
+                </ul>
+             </span>
+            </div>
+        </div>
+      </div> 
+    </section>
   </main>
 	<footer></footer>
-  <aside id="sideNav">
-    <button class="close-side-nav" onclick="sideNavClose();">
-      <svg class="svg-icon" width="20" height="20" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
-    </button>
-    <nav>
-      <a href="" class="active">Practices</a>
-      <a href="" class="">Patients</a>
-      <span class="separator"></span>
-      <a href="" class="">Go to Dashboard</a>
-    </nav>
-    <button class="button is-rounded is-bold is-green">Sign up</button>
-  </aside>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>  
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
 	<script type="text/javascript" src="custom.js"></script>
