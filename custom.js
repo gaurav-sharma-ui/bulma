@@ -12,7 +12,7 @@ $(document).ready(function () {
    
 
     function mobileOnlySlider() {
-        $('.mobile-wrap').slick({
+        $('.mobile-wrap, .partners').slick({
             dots: true,
             infinite: true,
             speed: 300,
@@ -25,12 +25,12 @@ $(document).ready(function () {
     }
     $(window).resize(function (e) {
         if (window.innerWidth < 768) {
-            if (!$('.mobile-wrap').hasClass('slick-initialized')) {
+            if (!$('.mobile-wrap, .partners').hasClass('slick-initialized')) {
                 mobileOnlySlider();
             }
         } else {
-            if ($('.mobile-wrap').hasClass('slick-initialized')) {
-                $('.mobile-wrap').slick('unslick');
+            if ($('.mobile-wrap, .partners').hasClass('slick-initialized')) {
+                $('.mobile-wrap, .partners').slick('unslick');
             }
         }
     });
