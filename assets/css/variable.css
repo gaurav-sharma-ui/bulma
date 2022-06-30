@@ -124,6 +124,7 @@
     /* DISPLAY */
     --block: block;
     --inline-block: inline-block;
+    --none: none;
     --flex: flex;
     --flex-wrap: wrap;
     --flex-1: 1;
