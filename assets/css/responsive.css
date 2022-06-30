@@ -14,14 +14,11 @@
     --cus-lineht-4: 2.4rem;
 
     /* PADDING_MARGIN VARIABLES */
-    --px-70: 4rem;
-    --px-110: 4rem;
+    --p-x-70: 4rem;
+    --p-x-110: 4rem;
     --mb-56: 2rem;
-    --pt-125: 6rem;
+    --p-t-125: 6.5rem;
     --p-top-145: 7.5rem;
-    --pt-18: 8rem;
-    --pt-20: 5rem;
-    --pt-116: 8rem;
 }
 
 .container:not(.is-max-desktop):not(.is-max-widescreen) {
@@ -88,7 +85,9 @@
     min-width: 100%;
     margin-bottom: 2rem;
 }
-
+.mb-6 {
+    margin-bottom: 0!important;
+}
 .columns.is-variable>.column {
     padding: 0;
 }
@@ -99,44 +98,4 @@
     margin-bottom: 4rem;
 }
 
-.section-check-in{
-    padding-top: 14rem;
-}
-
-.section-what-we-are .mobile-wrap img{
-    margin: 0 auto;
-}
-
-.animation-bg {
-    padding: 3.6rem 0;
-    background-size: contain;
-}
-
-.dropdown.is-active .dropdown-menu{
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: #fff;
-    margin-top: 0;
-    min-width: auto;
-}
-.dropdown-content{
-    box-shadow: none;
-    padding: 0;
-}
-}
-
-@media screen 
-  and (min-width: 768px)
-  and (max-width: 1024px){
-    :root{
-        --global-font-size: 50%;
-    }
-   .mobile-header {
-    right: -1.5rem;
-    bottom: -41rem;
-}
-    
 }

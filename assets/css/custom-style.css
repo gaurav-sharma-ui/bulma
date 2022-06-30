@@ -70,8 +70,29 @@ body{
 .is-border-0 {
     border: var(--zero)!important;
 }
-
-
+.is-only-desktop {
+    display: var(--block)!important;
+}
+.is-only-mobile {
+    display: var(--none)!important;
+}
+@media (max-width: 767px) {
+    .is-only-desktop {
+        display: var(--none)!important;
+    } 
+    .is-only-mobile {
+        display: var(--block)!important;
+    }
+}
+.top-space-10 {
+    margin-top: 1rem!important;
+}
+.top-space-43 {
+    margin-top: 4.3rem;
+}
+.top-space-165 {
+    margin-top: 16.5rem!important;
+}
 /* SLICK SLIDER CUSTOMIZE */
 .slick-dots{
     position: initial;
@@ -95,7 +116,7 @@ body{
 
 .slick-dots li.slick-active button:before {
     opacity: 1;
-    color: var(--light-blue-color);
+    color: var(--midnight-blue-color);
 }
 .image.is-20x20 {
     height: 20px;
@@ -148,7 +169,21 @@ header {
     margin: var(--right-52);
     cursor: var(--pointer);
 }
- 
+header nav a {
+    font-weight: var(--font-weight-400);
+    font-size: var(--cus-size-6);
+    line-height: var(--cus-lineht-7);
+    color: var(--light-grey-color-2);
+    padding: 0 1.5rem;
+}
+header nav a:hover {
+    color: var(--midnight-blue-color);
+}
+header nav a.active {
+    font-family: var(--hero-extra-bold);
+    font-weight: var(--font-weight-900);
+    color: var(--midnight-blue-color);
+}
 header nav a:first-child {
     margin-right: var(--mr-10);
 }
@@ -162,10 +197,10 @@ header nav a:nth-child(4) {
 .separator {
     border-right-width: var(--border-width-1);
     border-right-style: solid;
-    border-color: var(--light-blue-color);
+    border-color: var(--midnight-blue-color);
     height: 2.8rem;
     margin-right: 0.4rem;
-} 
+}
 
 @media (max-width: 767px) {
     .header-right {
@@ -456,6 +491,12 @@ color: var(--midnight-color);
 .card-wrapper.is-centered {
     justify-content: center;
 }
+.card-inner-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
 .card.is-big {
     display: block;
     width: 30.2rem;
@@ -478,29 +519,38 @@ color: var(--midnight-color);
     font: 900 1.2rem/1.8rem var(--heronew-extra-bold);
     color: var(--midnight-color);
     margin-top: 3.4rem;
+    text-align: center;
+}
+.card.is-big .card-body-footer img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
 }
 .card.is-small{
     display: block;
     width: 17.6rem;
     box-shadow: var(--box-shadow);
     padding: 0.6rem 2.8rem;
-    margin: var(--zero) 1.8rem;
+    margin-top: var(--zero);
+    margin-right: 1.8rem;
+    margin-left: 1.8rem;
+    margin-bottom: 3.7rem;
 }
 .card.is-small .card-title{
     font: 900 1.8rem/2rem var(--heronew-extra-bold);
     color: var(--midnight-color);
-    margin-top: 20rem;
+    margin-top: 3rem;
 }
-.card.is-small .card-content{
+.card.is-small .card-body-content{
     font: 400 1.4rem/2.4rem var(--helvetica-regular);
     color: var(--midnight-color);
     margin-top: 1.2rem;
-    padding-bottom: 2.4rem;
+    padding: 0 1rem 2.4rem;
 }
 .card.is-radius-big{
     border-radius: var(--border-radius-45);
 }
-.card.is-radius-medium{
+.card.is-radius-small{
     border-radius: var(--border-radius-30);
 }
 .card .is-big-title {
@@ -521,13 +571,30 @@ color: var(--midnight-color);
 .card figure + .card-title {
     margin-top: 1rem;
 }
+.plan-section-footer {
+    max-width: 62rem;
+    margin: 1.7rem auto var(--zero);
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    text-align: center;
+}
 
 /* OVER TIME IMAGE */
 .over-time-image {
     max-width: 66.6rem;
     margin: var(--zero-auto);
     display: flex;
+    flex-direction: row-reverse;
+}
+.first-image {
+    display: flex;
     flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+}
+.second-image {
+    margin-top: 14rem;
+    margin-right: -11rem;
 }
 
 /* MAIN_SLIDER SECTION */
@@ -569,7 +636,7 @@ color: var(--midnight-color);
 
 /* AKS css start */
 
-.bg1 {
+.bg1{
     background: url(../img/gradient.png) no-repeat top left/cover;
 }
 .title-group {
@@ -723,7 +790,7 @@ color: var(--midnight-color);
 
 }
 .tabs.pricing .tab li .is-active {
-    border-bottom: 3px solid var(--light-blue-color);
+    border-bottom: 3px solid var(--midnight-blue-color);
 }
 .tabs.pricing ul {
     border-bottom: 2px solid var(--light-grey-color-3);
@@ -811,7 +878,7 @@ color: var(--midnight-color);
     background-color: var(--mint-color);
 }
 .payment-steps .payment-steps-dots span:nth-child(2) {
-    background-color: var(--light-blue-color);
+    background-color: var(--midnight-blue-color);
 }
 .payment-steps .payment-steps-dots span:nth-child(3) {
     background-color: var(--yellow-color);
@@ -880,3 +947,4 @@ color: var(--midnight-color);
         margin: 0 var(--mrl-16);
     }
 }
+/*  */
