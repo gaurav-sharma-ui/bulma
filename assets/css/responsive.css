@@ -92,6 +92,18 @@
 .columns.is-variable>.column {
     padding: 0;
 }
+
+.payment-steps-main-bg {
+    width: 100%;
+}
+.payment-steps-1 {
+    padding: 1rem;
+    margin: 0 var(--mrl-16);
+}
+.bg1 {
+    background: none;
+}
+
 .facny-bg p {
     padding: 0;
 }
@@ -189,7 +201,10 @@
     flex: 3;
 }
 .tabs.pricing ul li.is-three-fifths div{
-    width: auto;
+    width: 66%;
+}
+.tabs.pricing ul li.is-three-fifths span {
+    width: 62%;
 }
 }
 
