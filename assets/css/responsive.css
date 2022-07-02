@@ -206,6 +206,28 @@
 .tabs.pricing ul li.is-three-fifths span {
     width: 62%;
 }
+.top-space-165 {
+    margin-top: 8.2rem!important;
+}
+.over-time-image {
+    flex-wrap: wrap;
+    flex-direction: initial;
+    justify-content: center;
+}
+.first-image {
+    align-items: center;
+}
+.first-image img:last-child {
+    order: 1;
+    margin-right: 0;
+}
+.first-image img:first-child {
+    order: 2;
+}
+.second-image {
+    position: initial;
+    margin-top: var(--zero);
+}
 }
 
 @media screen 
