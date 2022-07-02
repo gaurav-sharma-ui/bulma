@@ -87,11 +87,20 @@ body{
 .top-space-10 {
     margin-top: 1rem!important;
 }
+.top-space-30 {
+    margin-top: 3rem!important;
+}
 .top-space-43 {
     margin-top: 4.3rem;
 }
 .top-space-165 {
     margin-top: 16.5rem!important;
+}
+.bottom-space-0 {
+    margin-bottom: var(--zero)!important;
+}
+.is-width-600 {
+    max-width: 60rem;
 }
 /* SLICK SLIDER CUSTOMIZE */
 .slick-dots{
@@ -575,17 +584,31 @@ color: var(--midnight-color);
     margin: var(--zero-auto);
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
 }
 .first-image {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    align-items: center;
+    align-items: flex-end;
+}
+.first-image img:last-child {
+    margin-right: 6rem;
 }
 .second-image {
     margin-top: 14rem;
-    margin-right: -11rem;
+    position: absolute;
+    left: 10.5rem;
+    bottom: -3.7rem;;
 }
+
+/* Award Winning Section */
+.award-winning-column {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* MAIN_SLIDER SECTION */
 
