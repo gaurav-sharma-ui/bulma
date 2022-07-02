@@ -19,18 +19,25 @@ $(document).ready(function () {
             arrows: false,
             slidesToShow: 1
         });
+        $('.plan-type').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 2
+        });
     }
     if (window.innerWidth < 768) {
         mobileOnlySlider();
     }
     $(window).resize(function (e) {
         if (window.innerWidth < 768) {
-            if (!$('.mobile-wrap, .partners').hasClass('slick-initialized')) {
+            if (!$('.mobile-wrap, .partners, .plan-type').hasClass('slick-initialized')) {
                 mobileOnlySlider();
             }
         } else {
-            if ($('.mobile-wrap, .partners').hasClass('slick-initialized')) {
-                $('.mobile-wrap, .partners').slick('unslick');
+            if ($('.mobile-wrap, .partners, .plan-type').hasClass('slick-initialized')) {
+                $('.mobile-wrap, .partners, .plan-type').slick('unslick');
             }
         }
     });

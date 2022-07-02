@@ -87,11 +87,20 @@ body{
 .top-space-10 {
     margin-top: 1rem!important;
 }
+.top-space-30 {
+    margin-top: 3rem!important;
+}
 .top-space-43 {
     margin-top: 4.3rem;
 }
 .top-space-165 {
     margin-top: 16.5rem!important;
+}
+.bottom-space-0 {
+    margin-bottom: var(--zero)!important;
+}
+.is-width-600 {
+    max-width: 60rem;
 }
 /* SLICK SLIDER CUSTOMIZE */
 .slick-dots{
@@ -471,6 +480,9 @@ color: var(--midnight-color);
 }
 
 /* CARD STYLES (NEW)*/
+.containercard-wrapper.is-centered {
+    padding-left: 7px;
+}
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -572,17 +584,31 @@ color: var(--midnight-color);
     margin: var(--zero-auto);
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
 }
 .first-image {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
-    align-items: center;
+    align-items: flex-end;
+}
+.first-image img:last-child {
+    margin-right: 6rem;
 }
 .second-image {
     margin-top: 14rem;
-    margin-right: -11rem;
+    position: absolute;
+    left: 10.5rem;
+    bottom: -3.7rem;;
 }
+
+/* Award Winning Section */
+.award-winning-column {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* MAIN_SLIDER SECTION */
 
@@ -687,6 +713,10 @@ color: var(--midnight-color);
     display: inline-flex;
     margin-bottom: 4rem;
     margin-left: 1rem;
+}
+.facny-bg-wrap {
+    position: relative;
+    left: -27px;
 }
 .facny-bg {
     background: url(../img/ART_600x600-Confetti-3.png) no-repeat top center;
@@ -796,9 +826,11 @@ color: var(--midnight-color);
     border-bottom: 2px solid var(--light-grey-color-3);
 }
 .tabs.pricing ul li.is-three-fifths span {
+    display: var(--inline-block);
     font-family: var(--helvetica-regular);
     font-size: var(--cus-size-8);
     color: var(--light-grey-color);
+    white-space: normal;
 }
 .section-3-ftr {
     margin-top: var(--mt-40);
@@ -924,14 +956,3 @@ color: var(--midnight-color);
 .main-menu-mobile-header{
     padding: 2rem 0;
 }
-
-@media (max-width: 767px) {
-    .payment-steps-main-bg {
-        width: 100%;
-    }
-    .payment-steps-1 {
-        padding: 1rem;
-        margin: 0 var(--mrl-16);
-    }
-}
-/*  */

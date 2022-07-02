@@ -92,6 +92,18 @@
 .columns.is-variable>.column {
     padding: 0;
 }
+
+.payment-steps-main-bg {
+    width: 100%;
+}
+.payment-steps-1 {
+    padding: 1rem;
+    margin: 0 var(--mrl-16);
+}
+.bg1 {
+    background: none;
+}
+
 .facny-bg p {
     padding: 0;
 }
@@ -189,9 +201,43 @@
     flex: 3;
 }
 .tabs.pricing ul li.is-three-fifths div{
-    width: auto;
+    width: 66%;
+}
+.tabs.pricing ul li.is-three-fifths span {
+    width: 62%;
+}
+.top-space-165 {
+    margin-top: 8.2rem!important;
+}
+.over-time-image {
+    flex-wrap: wrap;
+    flex-direction: initial;
+    justify-content: center;
+}
+.first-image {
+    align-items: center;
+}
+.first-image img:last-child {
+    order: 1;
+    margin-right: 0;
+}
+.first-image img:first-child {
+    order: 2;
+}
+.second-image {
+    position: initial;
+    margin-top: var(--zero);
 }
 }
+
+@media screen 
+  and (min-width: 769px)
+  and (max-width: 1399px){
+    .second-image {
+        left: -3.5rem;
+        bottom: -3.7rem;
+    }
+  }
 
 @media screen 
   and (min-width: 768px)
