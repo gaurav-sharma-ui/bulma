@@ -87,17 +87,32 @@ body{
 .top-space-10 {
     margin-top: 1rem!important;
 }
+.top-space-14 {
+    margin-top: 1.4rem!important;
+}
+.top-space-17 {
+    margin-top: 1.7rem!important;
+}
 .top-space-30 {
     margin-top: 3rem!important;
 }
 .top-space-43 {
     margin-top: 4.3rem;
 }
-.top-space-165 {
-    margin-top: 16.5rem!important;
+.top-space-57 {
+    margin-top: 5.7rem;
+}
+.top-space-142 {
+    margin-top: 14.2rem!important;
+}
+.top-space-187 {
+    margin-top: 18.7rem!important;
 }
 .bottom-space-0 {
     margin-bottom: var(--zero)!important;
+}
+.bottom-space-157 {
+    margin-bottom: 15.7rem!important;
 }
 .is-width-600 {
     max-width: 60rem;
@@ -479,6 +494,15 @@ color: var(--midnight-color);
     margin-bottom: var(--mb-56);
 }
 
+.section-is-product {
+    background: url(../img/gradient.png) no-repeat left 6rem/cover;
+}
+
+.section-is-hear {
+    background: url(../img/gradient.png) no-repeat left 18.6rem/cover;
+    margin-top: 18.7rem;
+}
+
 /* CARD STYLES (NEW)*/
 .containercard-wrapper.is-centered {
     padding-left: 7px;
@@ -605,6 +629,7 @@ color: var(--midnight-color);
 /* Award Winning Section */
 .award-winning-column {
     max-width: 60rem;
+    margin-top: 6.6rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -648,10 +673,6 @@ color: var(--midnight-color);
 }
 
 /* AKS css start */
-
-.bg1{
-    background: url(../img/gradient.png) no-repeat top left/cover;
-}
 .title-group {
     display: flex;
     flex-direction: column;
@@ -713,6 +734,10 @@ color: var(--midnight-color);
     display: inline-flex;
     margin-bottom: 4rem;
     margin-left: 1rem;
+}
+.hear-from-section {
+    background: url(../img/gradient.png) no-repeat top left/cover;
+
 }
 .facny-bg-wrap {
     position: relative;
