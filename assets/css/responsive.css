@@ -180,7 +180,7 @@
     margin: 0 auto;
     flex-direction: column;
     width: 244px;
-        padding: 15px 20px 15px 20px;
+    padding: 15px 20px 15px 20px;
 }
 .payment-steps-3 .card-icon {
     display: flex;
@@ -188,16 +188,16 @@
     justify-content: space-between;
 }
 
-   .header-right {
-        display: none;
-    }
-    .row-wrap-item-center {
-        justify-content: space-between;
-    }
-    .bottom-header {
-        padding: 1rem 2rem;
-    }
-    .tabs li.is-three-fifths {
+.header-right {
+    display: none;
+}
+.row-wrap-item-center {
+    justify-content: space-between;
+}
+.bottom-header {
+    padding: 1rem 2rem;
+}
+.tabs li.is-three-fifths {
     flex: 3;
 }
 .tabs.pricing ul li.is-three-fifths div{
@@ -240,11 +240,11 @@
     display: flex;
 }
 
-.section-footer .footer-column  .column {
+.section-footer .footer-column .column {
     width: 48%;
     margin-bottom: 2rem;
 }
-.section-footer .footer-column  .column:last-child {
+.section-footer .footer-column .column:last-child {
     flex-basis: 100%;
  }
 .footer-column .column div {
@@ -288,6 +288,13 @@
 }
 .is-section-plan-types .card.is-small .card-title {
     font-size: 1.4rem !important;
+}
+.slick-slide .section-tag-block img {
+    display: inline;
+}
+.award-winning-section .content.px-50.mb-6 {
+    max-width: 39.8rem;
+    margin: var(--zero-auto);
 }
 }
 

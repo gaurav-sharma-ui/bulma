@@ -102,6 +102,9 @@ body{
 .top-space-57 {
     margin-top: 5.7rem;
 }
+.top-space-90 {
+    margin-top: 9rem;
+}
 .top-space-142 {
     margin-top: 14.2rem!important;
 }
@@ -110,6 +113,9 @@ body{
 }
 .bottom-space-0 {
     margin-bottom: var(--zero)!important;
+}
+.bottom-space-17 {
+    margin-bottom: 1.7rem!important;
 }
 .bottom-space-157 {
     margin-bottom: 15.7rem!important;
@@ -499,7 +505,7 @@ color: var(--midnight-color);
 }
 
 .section-is-hear {
-    background: url(../img/gradient.png) no-repeat left 18.6rem/cover;
+    background: url(../img/gradient.png) no-repeat left 15.2rem/cover;
     margin-top: 18.7rem;
 }
 
@@ -633,7 +639,25 @@ color: var(--midnight-color);
     margin-left: auto;
     margin-right: auto;
 }
-
+.section-tag-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-tag-left {
+    flex: 1;
+    text-align: right;
+    margin-right: 2rem;
+    margin-bottom: 1.1rem;
+}
+.section-tag {
+    background: var(--extra-light-blue-color);
+    font: 900 1.2rem/1.2rem var(--hero-extra-bold);
+    border-radius: 1.1rem;
+    width: 10.6rem;
+    padding: 0.9rem 0.5rem;
+    margin-bottom: 1.1rem;
+}
 
 /* MAIN_SLIDER SECTION */
 
