@@ -115,7 +115,7 @@
     .dropdown.is-active .dropdown-menu {
         left: var(--zero);
         position: fixed;
-        top: var(--zero);
+        top: -0.4rem;
         width: 100%;
         height: 100vh;
         background: #fff;
@@ -128,6 +128,26 @@
     }
     .main-menu-mobile-header a {
         color: var(--dark-color);
+    }
+    .dropdown-menu .content-header img {
+        height: 27px;
+    }
+    .un-list-nav-parent {
+        font-family: var(--helvetica-bold);
+        font-size: 1.7rem;
+        line-height: 1.6rem;
+        color: var(--midnight-color);
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    .tab-above-para {
+        margin-bottom: 2rem;
+    }
+    .tab-above-title {
+        margin-top: 4rem;
+    }
+    .tabs.pricing .tab li button {
+        font-size: var(--cus-size-6);
     }
     .payment-steps-main-bg {
         background-size: contain;

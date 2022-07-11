@@ -129,7 +129,7 @@ body{
 }
 
 .slick-dots li{
-    width: 1rem;
+    width: 0.1rem;
     height: 1rem;
 }
 .slick-dots li button {
@@ -690,10 +690,19 @@ color: var(--midnight-color);
     margin-top: 3rem;
 }
 
+.cus-block {
+    margin-bottom: 3rem;
+}
 .cus-block p {
     max-width: 44rem;
     margin-right: auto;
     margin-left: auto;
+}
+p.cus-block-footer {
+    max-width: 36rem;
+    font-size: var(--cus-size-8);
+    line-height: var(--cus-lineht-8);
+    color: var(--midnight-color);
 }
 
 /* AKS css start */
@@ -841,6 +850,19 @@ color: var(--midnight-color);
 .navbar-burger span {
     background-color: var(--blue-color);
 }
+.tab-above-para {
+    font-size: var(--cus-size-3);
+    line-height: var(--cus-lineht-3);
+    color: var(--midnight-color);
+    margin-bottom: var(--mb-34);
+}
+.tab-above-title {
+    font-family: var(--hero-extra-bold);
+    font-size: var(--cus-size-3);
+    line-height: var(--cus-lineht-3);
+    color: var(--midnight-color);
+    margin-top: var(--mt-28);
+}
 .tabs.pricing .tab li {
     width: 41%;
     padding: var(--zero);
@@ -849,6 +871,7 @@ color: var(--midnight-color);
     border: var(--zero);
     border-bottom: 3px solid var(--light-blue-color-2);
     cursor: var(--pointer);
+    font-family: var(--hero-regular);
     font-size: var(--cus-size-3);
     padding-bottom: var(--cus-size-7);
     width: 100%;
