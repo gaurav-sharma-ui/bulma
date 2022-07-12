@@ -102,8 +102,9 @@
     .partners-card:last-child {
         margin-bottom: 4rem;
     }
-    .section-check-in{
+    .section-check-in {
         padding-top: 14rem;
+        padding-bottom: 2.6rem;
     }
     .section-what-we-are .mobile-wrap img {
         margin: var(--zero-auto);
@@ -140,14 +141,84 @@
         font-weight: 400;
         margin-bottom: 1rem;
     }
+    .section-check-in img {
+        margin-bottom: 2.4rem;
+    }
+    .section-check-in p {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .section-check-in .section-check-in-footer {
+        margin: var(--zero);
+    }
+    .section-check-in p.mb-45 {
+        margin-bottom: 3.4rem;
+    }
+    .section-check-in .slick-dots {
+        margin-top: 1.6rem;
+    }
     .tab-above-para {
-        margin-bottom: 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 2.4rem;
     }
     .tab-above-title {
-        margin-top: 4rem;
+        margin-top: 4.2rem;
+    }
+    .columns.is-mobile>.column.is-three-fifths {
+        width: 62%;
     }
     .tabs.pricing .tab li button {
+        border-bottom: 2px solid var(--light-blue-color-2);
         font-size: var(--cus-size-6);
+        padding-bottom: 1rem;
+    }
+    .tabs.pricing .tab li .is-active {
+        border-color: var(--midnight-blue-color);
+    }
+    .tabs.is-large {
+        font-size: var(--cus-size-8);
+        line-height: var(--cus-lineht-12);
+    }
+    .tabs.pricing ul li.is-three-fifths span {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        margin-top: 0.5rem;
+    }
+    #airPayPlan ul:not(:first-child) .column.is-ten-per img {
+        width: 15px;
+        height: 15px;
+    }
+    .section-3-ftr>.columns {
+        font-size: var(--cus-size-8);
+        line-height: var(--cus-lineht-8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-3-ftr>.columns .icon {
+        width: 18px;
+        height: 18px;
+        margin-right: var(--zero);
+        margin-bottom: 0.6rem;
+    }
+    .section-3-ftr div:last-child {
+        font-size: var(--cus-size-10);
+        line-height: var(--cus-size-5);
+        border-top: 1px solid var(--dark-color);
+        padding-top: 1.1rem;
+        margin: 2.1rem 3rem 0;
+    }
+    .section-hero {
+        margin-top: 8.1rem;
+    }
+    .is-section-plan-types figure {
+        margin-bottom: 2rem;
+    }
+    .is-section-plan-types .title-head {
+        margin-bottom: 3.6rem;
+    }
+    .is-section-plan-types .card.is-small {
+        margin: var(--zero) 1.5rem 3.7rem 0;
     }
     .payment-steps-main-bg {
         background-size: contain;
