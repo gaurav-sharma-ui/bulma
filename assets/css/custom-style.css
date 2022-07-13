@@ -560,10 +560,7 @@ color: var(--midnight-color);
     width: 17.6rem;
     box-shadow: var(--box-shadow);
     padding: 0.6rem 2.8rem;
-    margin-top: var(--zero);
-    margin-right: 1.8rem;
-    margin-left: 1.8rem;
-    margin-bottom: 3.7rem;
+    margin: var(--zero) 1.8rem 3.7rem;
 }
 .card.is-small .card-title{
     font: 900 1.8rem/2rem var(--heronew-extra-bold);
@@ -850,6 +847,13 @@ p.cus-block-footer {
 .navbar-burger span {
     background-color: var(--blue-color);
 }
+.section-check-in-footer {
+    font-family: var(--hero-bold);
+    font-size: var(--cus-size-8);
+    line-height: var(--cus-lineht-8);
+    color: var(--midnight-color);
+    text-align: center;
+}
 .tab-above-para {
     font-size: var(--cus-size-3);
     line-height: var(--cus-lineht-3);
@@ -879,7 +883,7 @@ p.cus-block-footer {
 
 }
 .tabs.pricing .tab li .is-active {
-    border-bottom: 3px solid var(--midnight-blue-color);
+    border-color: var(--midnight-blue-color);
 }
 .tabs.pricing ul {
     border-bottom: 2px solid var(--light-grey-color-3);
