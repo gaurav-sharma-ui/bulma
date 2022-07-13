@@ -123,6 +123,9 @@ body{
 .is-width-600 {
     max-width: 60rem;
 }
+.hide {
+    display: none;
+}
 /* SLICK SLIDER CUSTOMIZE */
 .slick-dots{
     position: initial;
@@ -924,7 +927,7 @@ p.cus-block-footer {
 
 /* Payment Steps */
 .payment-steps {
-    margin-top: var(--mt-124);
+    padding-top: var(--pt-124);
 }
 .payment-steps-main-bg {
     background: url(../img/graphic-phone.png) no-repeat left top/cover;

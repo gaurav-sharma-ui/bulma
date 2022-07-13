@@ -86,9 +86,6 @@
     .columns.is-variable>.column {
         padding: var(--zero);
     }
-    .payment-steps-main-bg {
-        width: 100%;
-    }
     .payment-steps-1 {
         padding: 1rem;
         margin: 0 var(--mrl-16);
@@ -217,11 +214,13 @@
     .is-section-plan-types .title-head {
         margin-bottom: 3.6rem;
     }
-    .is-section-plan-types .card.is-small {
-        margin: var(--zero) 1.5rem 3.7rem 0;
+    .payment-steps {
+        overflow: hidden;
     }
     .payment-steps-main-bg {
+        width: 130%;
         background-size: contain;
+        margin-left: -17%;
     }
     .payment-step-title {
         --cus-size-2:2rem;
@@ -361,8 +360,39 @@
     .column.partners.slick-initialized.slick-slider.slick-dotted:last-child {
         display: none;
     }
-    .is-section-plan-types .card.is-small .card-title {
-        font-size: 1.4rem !important;
+    .card.is-small {
+        width: 12.6rem!important;
+        padding: 0.6rem 1.5rem;
+        margin: var(--zero) 0.8rem 3.7rem;
+    }
+    .card.is-small .card-title {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        margin-top: 2rem;
+    }
+    .card.is-small .card-body-content {
+        line-height: 1.7rem;
+        padding: 0 0 1.7rem;
+        margin-top: 0.2rem;
+    }
+    .is-section-plan-types .slick-dots {
+        margin-top: -1.3rem;
+    }
+    .plan-section-footer {
+        margin-top: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .content-separator {
+        width: 10rem;
+        border-top: 2px solid var(--light-grey-color-2);
+        margin: 1rem auto;
+    }
+    .read-more {
+        font: 400 1.2rem/1.8rem var(--hero-regular);
+        color: var(--light-grey-color-2);
+        background: transparent;
+        border: var(--zero);
     }
     .slick-slide .section-tag-block img {
         display: inline;
