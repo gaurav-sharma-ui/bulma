@@ -97,3 +97,14 @@ function openTab(evt, airPayName) {
         document.getElementById("sideNav").style.left = "-20vw";
     }
   }
+
+  function showHideContent() {
+    var x = document.getElementById("moreContent");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      document.getElementsByClassName('content-separator')[0].style.display = 'none';
+      document.getElementsByClassName('read-more')[0].style.display = 'none';
+    } else {
+      x.style.display = "none";
+    }
+  } 
