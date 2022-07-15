@@ -17,7 +17,9 @@ $(document).ready(function () {
             infinite: true,
             speed: 300,
             arrows: false,
-            slidesToShow: 1
+            slidesToShow: 1,
+            centerPadding: '10px',
+            centerMode: true
         });
         $('.plan-type').slick({
             dots: true,

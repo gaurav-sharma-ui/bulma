@@ -611,7 +611,7 @@ color: var(--midnight-color);
 /* OVER TIME IMAGE */
 .over-time-image {
     max-width: 66.6rem;
-    margin: var(--zero-auto);
+    margin: 14.2rem auto 0;
     display: flex;
     flex-direction: row-reverse;
     position: relative;

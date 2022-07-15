@@ -109,7 +109,8 @@
         padding: var(--zero);
     }
     .section-is-product {
-        background: none;
+        background-position: center;
+        padding-top: 12rem;
     }
     .facny-bg p {
         padding: var(--zero);
@@ -232,6 +233,20 @@
     .is-section-plan-types .title-head {
         margin-bottom: 3.6rem;
     }
+    .section-is-hear {
+        padding-top: 15rem;
+        background-position: left -19rem;
+        margin-top: 0;
+    }
+    .partners-card {
+        max-width: 300px;
+    }
+    .award-winning-column {
+        margin-top: 9rem;
+    }
+    .over-time-image {
+        margin-top: var(--zero);
+    }
     .payment-steps {
         overflow: hidden;
     }
@@ -353,12 +368,14 @@
         width: auto;
         margin-bottom: 2rem !important;
     }
-    .section-is-product .slick-slider .card.is-big , .is-section-faq .slick-slider .card.is-big { 
+    .section-is-product .slick-slider .card.is-big, .is-section-faq .slick-slider .card.is-big {
+        max-width: 310px;
         margin-top: 1rem;
-        margin-bottom: var(--zero);
+        height: 272px;
     }
     .is-section-faq .slick-slider .card.is-big {
         margin-bottom: 1.4rem;
+        height: auto;
     }
     .title-head {
         padding: var(--zero) 10px;
