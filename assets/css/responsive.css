@@ -53,14 +53,36 @@
     .mx-wt-15 {
         max-width: 15%;
     }
+    .intro-slider .has-family-primary-extra-bold.has-size-1.mb-22 {
+        margin-bottom: var(--zero)!important;
+    }
+    .pay-platform-img {
+        margin-bottom: 6rem;
+    }
+    .pay-platform-img>div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    /* .intro-slider .slick-slide img {
+        float: left;
+    } */
+    .intro-slider .slick-slide .mobile-header {
+        margin-left: -20%;
+        margin-top: 18%;
+    }
+    .intro-slider .slick-slide .mobile-header.pos-absolute {
+        position: initial;
+    }
     .how-it-works {
-        bottom: -50px;
+        bottom: 18%;
         left: 41%;
     }
-    .mobile-header {
+    /* .mobile-header {
         right: 26px;
-        bottom: -10rem;
-    }
+        top: 20%;
+        bottom: auto;
+    } */
     .hero-mobile-responsive p {
         font-size: 1.8rem;
         list-style: 2.8rem;
@@ -86,10 +108,6 @@
     .columns.is-variable>.column {
         padding: var(--zero);
     }
-    .payment-steps-1 {
-        padding: 1rem;
-        margin: 0 var(--mrl-16);
-    }
     .section-is-product {
         background: none;
     }
@@ -100,7 +118,7 @@
         margin-bottom: 4rem;
     }
     .section-check-in {
-        padding-top: 14rem;
+        padding-top: 3.6rem;
         padding-bottom: 2.6rem;
     }
     .section-what-we-are .mobile-wrap img {
@@ -219,7 +237,7 @@
     }
     .payment-steps-main-bg {
         width: 130%;
-        background-size: contain;
+        background-size: 100%;
         margin-left: -17%;
     }
     .payment-step-title {
@@ -227,12 +245,6 @@
         font-size: var(--cus-size-2);
         line-height: 2.2rem;
         margin-top:1rem;
-    }
-    .payment-steps-1 {
-        max-width: 17.5rem;
-        margin-left: 14rem;
-        margin-top: -6rem;
-        padding: 2rem 1rem;
     }
     .payment-steps .payment-steps-dots span {
         width: 0.7rem;
@@ -247,7 +259,7 @@
     }
     .payment-steps-2 {
         text-align: center;
-        margin-top: 17rem;
+        margin-top: 50%;
         margin-left: var(--zero);
     }
     .payment-steps-2 img {
@@ -256,7 +268,7 @@
     .payment-steps-3 {
         display: flex;
         flex-wrap: wrap;
-        margin: var(--zero-auto);
+        margin: 0 auto 1rem;
         flex-direction: column;
         width: 244px;
         padding: 15px 20px 15px 20px;
@@ -400,6 +412,30 @@
     .award-winning-section .content.px-50.mb-6 {
         max-width: 39.8rem;
         margin: var(--zero-auto);
+    }
+}
+
+@media (max-width: 599px) {
+    .payment-steps-1 {
+        max-width: 17.5rem;
+        margin-left: 39%;
+        margin-top: -6rem;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .payment-steps-1 {
+        max-width: 33rem;
+        margin-left: 40%;
+    }
+    .payment-step-title {
+        font-size: var(--cus-size-1);
+        line-height: var(--cus-lineht-2);
+    }
+    .payment-step-lead {
+        font-size: var(--cus-size-4);
+        line-height: normal;
     }
 }
 
